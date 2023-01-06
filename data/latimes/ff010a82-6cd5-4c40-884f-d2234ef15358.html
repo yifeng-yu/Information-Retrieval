@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    
+    <!--
+                                              _..
+      ____     _   _____   _     ___..-"""-.  `)^|   .-"""-..___    ____   _____  ____   _  __
+     |  _ \   / \ |_   _| / \   `-...___ `=.`-.`  \-`.=` ___...-`  |  _ \ | ____|/ ___| | |/ /
+     | | | | / _ \  | |  / _ \          `\  ` ##### `  /`          | | | ||  _|  \___ \ | ` /
+     | |_| |/ ___ \ | | / ___ \           `--;|||||;--`            | |_| || |___  ___) || . \
+     |____//_/   \_\|_|/_/   \_\             /\|||/\               |____/ |_____||____/ |_|\_\
+    _______________________________________ ( /;-;\ ) _________________________________________
+                                             `-...-`
+    -->
+    <!-- Created on June 25, 2019, using v1.3.21 of the Los Angeles Times Data Desk's base templates -->
+    
+    
+    <!-- Good with data? -->
+    <!-- Tired of grinding on the same old apps? -->
+    <!-- Want to use your skills in defense of truth, justice and the American way? -->
+    <!-- Email datadesk@latimes.com and let us know you're out there. -->
+    
+
+    
+    <link href="https://nexus.ensighten.com" rel="preconnect">
+    <link href="https://static.chartbeat.com" rel="preconnect">
+    <link href="https://ping.chartbeat.com" rel="preconnect">
+    <link href="https://www.tribdss.com" rel="preconnect">
+    <link href="https://ssor.tribdss.com" rel="preconnect">
+    <link href="https://latimes.signon.trb.com" rel="preconnect">
+    <link href="https://d1qqc1e9kvmdh8.cloudfront.net" rel="preconnect" crossorigin>
+    
+
+    <!-- METADATA -->
+    <title>Room 20 - Los Angeles Times</title>
+    
+    <meta charset="utf-8" />
+    <meta name="description" content="A new podcast from L.A. Times Studios" />
+    <meta name="keywords" content="data desk, los angeles times, latimes, l.a. times" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/favicon-32x32.ico" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/favicon-16x16.ico" sizes="16x16">
+    
+    
+        
+        <link rel="canonical" href="https://www.latimes.com/projects/room-20-podcast/">
+    
+
+    
+    
+    <meta property="og:title" content="Room 20"/>
+    
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://www.latimes.com/projects/room-20-podcast/" />
+    <meta property="og:image" content="https://www.latimes.com/projects/room-20-podcast/static/logo.png"/>
+    <meta property="og:site_name" content="www.latimes.com"/>
+    <meta property="og:description" content="A new podcast from L.A. Times Studios"/>
+    <meta property="fb:admins" content="1257725335"/>
+    <meta property="fb:app_id" content="119932621434123" />
+    <meta property="twitter:site" content="@latimes" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.latimes.com/projects/room-20-podcast/" />
+    
+    <meta property="twitter:title" content="Room 20" />
+    
+    <meta property="twitter:description" content="A new podcast from L.A. Times Studios" />
+    <meta property="twitter:image" content="https://www.latimes.com/projects/room-20-podcast/static/logo.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      
+      "headline": "Room 20",
+      
+      "image": {
+          "@type": "ImageObject",
+          "contentUrl": "https://www.latimes.com/projects/room-20-podcast/static/logo.png",
+          "url": "https://www.latimes.com/projects/room-20-podcast/static/logo.png",
+          "representativeOfPage": true
+      },
+      "datePublished": "2019-07-23",
+      "description": "A new podcast from L.A. Times Studios",
+      "publisher": {
+          "@type": "Organization",
+          "name": "Los Angeles Times",
+          "url": "http://www.latimes.com",
+          "location": {
+              "@type": "Place",
+              "name": "Los Angeles"
+          },
+          "logo": {
+              "@type": "ImageObject",
+              "contentUrl": "http://cookbook.latimes.com/img/ngux-tophat/logos/lat_logo_730_black.png",
+              "url": "http://cookbook.latimes.com/img/ngux-tophat/logos/lat_logo_730_black.png"
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "L.A. Times Studios"
+      }
+    }
+    </script>
+    
+
+    
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-1.3.21.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-responsive-1.3.21.min.css" />
+    
+    
+    <style type="text/css">.shares {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.shares__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.heroic .badge-logo {
+    top: 5%;
+}
+
+a.shares__item {
+  color: #282828;
+}
+
+a.shares__item:hover {
+  color: #666666;
+}
+
+.logo {
+    max-width: 630px;
+    margin: 0 auto;
+}
+.container section:first-of-type {
+    margin-top: 0;
+}
+.container section {
+    max-width: 630px;
+    margin: 20px auto;
+}
+article.big-build .container section.tagline p {
+    font-size: 30px;
+    line-height: 45px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2px;
+}
+@media (max-width: 767px) {
+    article.big-build .container section.tagline p {
+        font-size: 20px;
+        line-height: 30px;
+        font-style: italic;
+        text-align: center;
+        margin: 2px 10px;
+    }
+}
+section.callout p {
+    text-align: center;
+}
+.newsletter-container, .letter-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.signup-form {
+    margin-top: 0;
+    padding-top: 5px;
+}
+.signup-form .submit-field {
+    max-width: 500px;
+    margin: 2px auto;
+    width: 80%;
+}
+#footer-container {
+    background-color: white;
+    color: black;
+}
+#footer-container a {
+    color: black;
+}
+#footer-container #tos {
+    float: none;
+    text-align: center;
+}
+article.big-build .subscribe-bit h4.subscribe-title {
+    font-family: "Benton Gothic Black", Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 0 0;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+.subscribe-bit {
+  max-width: 630px;
+  margin: 20px auto;
+    font-family: "Benton Gothic", Arial, sans-serif;
+    font-size: 14px;
+}
+.flexy-subscribe {
+  display: flex;
+  opacity: .8;
+  flex-direction: row;
+  max-width: 320px;
+  justify-content: space-evenly;
+  margin: 5px auto 0 auto;
+}
+.logo-holder img.logo {
+  max-width: 24px;
+  margin-right: 5px;
+}
+.flexy-subscribe a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+nav.toc {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-top: 32px;
+  border-top: 1px solid #ddd;
+  padding: 20px 8px 21px 5px;
+  max-width: 630px;
+  margin: 25px auto;
+}
+.toc .nav>li>a {
+  display: inline;
+  background: transparent;
+}
+article.big-build .toc ul {
+  margin: 0;
+}
+article.big-build .toc li {
+  padding: 0;
+  margin: 20px auto 40px auto;
+  max-width: 600px;
+}
+.toc li a {
+  width: 100%;
+  margin: auto;
+}
+
+.toc ul.nav.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+article.big-build .toc ul.nav.columns li {
+    width: 49%;
+    margin: 20px 0 10px 0;
+}
+@media (max-width: 600px){
+  .toc ul.nav.columns {
+    display: block;
+  }
+  article.big-build .toc ul.nav.columns li {
+      width: 100%;
+      margin: 20px 0;
+  }
+}
+/*hovery crap*/
+.toc .li-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+.toc .li-img:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+article.big-build .toc h3.toc-title {
+  font-family: "Benton Gothic Bold", Arial, sans-serif;
+  color: var(--accent);
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: normal;
+}
+p.subhed, article.big-build .container p.subhed {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  margin: 8px auto 24px auto;
+}
+article.big-build .container .toc h4, .toc h4 {
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: normal;
+  font-style: normal;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+}
+.toc .li-img {
+  display:block
+}
+.toc .li-img, .toc .li-link {
+ display: inline-block;
+}
+.toc .li-img {
+ max-width: 100%;
+}
+.toc .li-link {
+  margin: 8px 0 18px 0;
+  text-align: center;
+  width: 100%;
+}
+</style>
+
+
+    
+<script type="text/javascript">
+    ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
+        // Page naming convention:
+        //  <site-slug>:<app-slug>:<path>:<datadesk-slug>-<page-slug>:<content-type>.
+        // Example:
+        //  lat:projects.latimes.com:local:data-pat-tillman:individualarticle.
+        //  (Don't miss the period at the end.)
+        pageName: 'lat:local:room-20-podcast:individualarticle.',
+        channel: 'local', // Path
+        server: 'www.latimes.com', // Full domain
+        hier1: 'latimes:local', // Path (with latimes prefix)
+        hier2: 'local', // Path (again)
+        prop1: 'D=pageName',
+        prop2: 'local', // Path (again!)
+        prop38: 'individualarticle', // Content type
+        eVar1: window.location.href, // This URL
+        eVar2: document.referrer, // The referring URL
+        prop44: 'room-20-podcast',
+        prop57: 'D=c38',
+        prop59: 'L.A. Times Studios',
+        eVar20: 'latimes',
+        eVar21: 'D=c38',
+        eVar34: 'D=ch',
+        eVar35: 'D=pageName',
+        events: '',
+        prop64: "07-23-2019 00:00"
+    });
+</script>
+
+
+    
+<script async src="https://nexus.ensighten.com/caltimes/lat_datadesk_prod/Bootstrap.js"></script>
+
+
+    <!-- JAVASCRIPT -->
+    
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/jquery-3.4.1/jquery-3.4.1.min.js" defer></script>
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/subscriber-check-1.3.21.min.js" defer></script>
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/ngux-ads-2.4.3.min.js" defer></script>
+    
+    
+
+    
+</head>
+<body data-ad-slug="room-20-podcast" data-ad-path="4011/trb.latimes/news/datadesk" data-ad-ptype="s" data-ad-iframe-url="/projects/static/ngux-tophat-ad-iframe.html" >
+    <!-- NAV -->
+    
+
+    
+<figure class="heroic">
+    <a href="https://www.latimes.com">
+        <img class="badge-logo" src="/projects/room-20-podcast/static/lats.png">
+    </a>
+    <img alt="Room 20 logo" src="/projects/room-20-podcast/static/topper.png?foo=1234">
+    <figcaption class="figcaption">
+    (Photo illustration)
+    </figcaption>
+</figure>
+<article class="big-build">
+  <div class="container">
+       
+
+<div class="shares">
+  <a class="shares__item" href="https://www.facebook.com/dialog/share?app_id=119932621434123&href=https://www.latimes.com/projects/room-20-podcast/"><i class="LATFacebook" data-socialshare-type="facebook" aria-label="Share this page on Facebook"></i></a>
+  <a class="shares__item" href="https://twitter.com/intent/tweet?url=https://www.latimes.com/projects/room-20-podcast/&text=Room%2020" aria-label="Share this page on Twitter"><i class="LATTwitter" data-socialshare-type="twitter" ></i></a>
+  <a class="shares__item" href="mailto:?subject=Room%2020 - Los Angeles Times&body=https://www.latimes.com/projects/room-20-podcast/" aria-label="Share this page in an email"><i class="LATEmail" data-socialshare-type="email"></i></a>
+</div>
+
+      <section class="tagline">
+          <p>A new L.A. Times Studios podcast about the search for a man’s identity.</p>
+      </section>
+      <section>
+          <link rel="stylesheet" type="text/css" href="https://web-player.art19.com/assets/current.css">
+          <script type="text/javascript" src="https://web-player.art19.com/assets/current.js"></script>
+          <div class="art19-web-player awp-medium awp-theme-dark-blue" data-series-id="df322ba1-a5b2-4c58-a194-5b8a664ce4d9" data-pick-from-series="playlist" data-playlist-rows="7"></div>
+          <div class="subscribe-bit">
+          <h4 class="subscribe-title">Subscribe to the podcast</h4>
+            <div class="flexy-subscribe">
+              <div class="logo-holder">
+                <a href="https://podcasts.apple.com/us/podcast/room-20/id1473207217">
+                <img class="logo" src="/projects/room-20-podcast/static/apple-podcasts.png">Apple Podcasts</a>
+              </div>
+              <div class="logo-holder">
+                <a href="https://open.spotify.com/show/4wdaTDHf3SH2eLqJkPu76j?si=vi5lxJQZQpy82Pa2KCNRRQ">
+                <img class="logo" src="/projects/room-20-podcast/static/spotify.png">Spotify</a>
+              </div>
+              <div class="logo-holder">
+                <a href="https://www.stitcher.com/podcast/wondery/room-20">
+                <img class="logo" src="/projects/room-20-podcast/static/stitcher.png">Stitcher</a>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="callout">
+          <p>Subscribe to Play Next to be the first to know when episodes arrive</p>
+          <div class="letter-container" aria-label="sign-up-form">
+  <div data-appname="newsletters-subscribe-form" class="signup-form">
+      <div class="subscribe-head">
+          <input class="submit-field" type="text" name="email" placeholder="Enter your email">
+          <input class="submit-button" type="submit" name="submit" value="Sign up">
+      </div>
+      <div class="subscribe-body">
+          <input name="Play Next" type="hidden" value="56ba3bac82" data-esp="mc" data-affiliate="2089072006">
+      </div>
+      <div class="subscribe-params">
+          <input name="sourceParam" type="hidden" value="man-in-the-window">
+      </div>
+      <div class="recaptcha" data-sitekey="6LfFQgwUAAAAAEuERByRQIv6hsg-cFxwaDTseE7M"></div>
+  </div>
+</div>
+
+          <p>This podcast was produced by L.A. Times Studios. The Los Angeles Times newsroom was not involved in the creation of this series.</p>
+      </section>
+      <nav name="toc" class="toc">
+        <h3 class="toc-title">Read More</h3>
+        <ul class="nav">
+        
+        
+             <li class="item">
+              <a rel="next" href="https://www.latimes.com/california/story/2019-08-01/sixty-six-garage-unconscious-and-anonymous-for-17-years">
+                <img class="li-img" src="static/room20-ignacio.jpg">
+              </a>
+                <a rel="next" href="https://www.latimes.com/california/story/2019-08-01/sixty-six-garage-unconscious-and-anonymous-for-17-years">
+                    <span class="li-link ">
+                       <h4>He’d been kept alive with tubes for nearly 17 years. Who is he, and is it possible he’s conscious?</h4>
+                    </span>
+                </a>
+            </li>
+        
+        
+        
+             <li class="item">
+              <a rel="next" href="https://www.latimes.com/projects/la-me-ln-border-patrol-immigrant-chases-crashes/">
+                <img class="li-img" src="https://www.latimes.com/projects/la-me-ln-border-patrol-immigrant-chases-crashes/static/images/_originals/3070546_ME_border_patrol_pursuits_GXC_0244.JPG">
+              </a>
+                <a rel="next" href="https://www.latimes.com/projects/la-me-ln-border-patrol-immigrant-chases-crashes/">
+                    <span class="li-link ">
+                       <h4>How border patrol chases have spun out of control, with deadly consequences</h4>
+                    </span>
+                </a>
+            </li>
+        
+        
+        </ul>
+      </nav>
+  </div>
+</article>
+<script type="text/javascript">
+    var subscribeForm = function() {
+    	//check if console exists, else pass empty function.
+    	if ( ! window.console ) console = { log: function(){} };
+    	// DOM ready
+        document.addEventListener("DOMContentLoaded", function(event) {
+    		var forms = document.querySelectorAll('[data-appname="newsletters-subscribe-form"]');
+    		generateCSS(forms);
+    	});
+    	// Add css to head of document
+    	function generateCSS(forms) {
+    		for (i=0; i < forms.length; ++i) {
+    			if (forms[i].getAttribute('data-structure') === 'vertical')
+    			{
+    				var labels = forms[i].querySelectorAll('label')
+    					for (j=0; j< labels.length; ++j) {
+    						labels[j].insertAdjacentHTML('afterend','<br />');
+    					}
+    			}
+    			else
+    			{
+    				forms[i].removeAttribute('data-structure');
+    			}
+    		}
+    		var app = '[data-appname=newsletters-subscribe-form]';
+          	var head = document.head || document.getElementsByTagName('head')[0];
+        		captchaJS = document.createElement('script');
+        		captchaJS.setAttribute(
+                    'src',
+                    'https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit'
+                );
+        		captchaJS.setAttribute('async','');
+        		captchaJS.setAttribute('defer','');
+        		head.appendChild(captchaJS);
+      }
+    };
+    var recaptchaCallback = function () {
+    	var forms = document.querySelectorAll('[data-appname="newsletters-subscribe-form"]');
+    	regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    		for (i=0; i < forms.length; ++i) {
+    			var divEl = document.createElement('div'),
+    			captchaSuccess = false;
+    			divEl.className = 'response';
+    			forms[i].querySelector('.subscribe-head').appendChild(divEl);
+    			forms[i].querySelector('input[type="submit"]').addEventListener('click', function() {
+    				var submit = this,
+    				form = getClosest(submit.parentNode, '[data-appname]'),
+    				captcha = form.querySelector('.recaptcha'),
+    				email = form.querySelector('input[name="email"]'),
+    				response = form.querySelector('.response'),
+    				newsletters = form.querySelectorAll('.subscribe-body input[type="checkbox"]:checked, .subscribe-body input[type="hidden"]'),
+    				valid = true,
+    				msg = '',
+    				responseNode = form.querySelector('.response');
+    				//submit.disabled = true;
+    				if (form.classList) {
+    					form.classList.remove('error');
+    					form.classList.remove('success');
+    				}
+    				if (!regex.test(email.value)) {
+    					valid = false;
+    					msg = 'Please provide a valid email.';
+    				}
+    				else if (newsletters.length < 1) {
+    					valid = false;
+    					msg = 'Please select a newsletter from below.';
+    				}
+    				if (valid) {
+    					responseNode.innerHTML = '';
+    					if (captchaSuccess == true) {
+    						captcha.style.display = 'block';
+    						grecaptcha.reset();
+    						response = grecaptcha.getResponse();
+    						if (response) { subscribeUser(response, form); }
+    					} else {
+    				    grecaptcha.render(captcha, {
+    				        sitekey: captcha.getAttribute('data-sitekey'),
+    				        callback: function (response) {
+    										subscribeUser(response, form);
+    										captchaSuccess = true;
+    										captcha.style.display = 'none';
+    				        }
+    				    });
+    					}
+    				} else {
+    					if (form.classList) {
+    						form.classList.add('error');
+    					} else {
+    						form.className += '' + error;
+    					}
+    					responseNode.innerHTML = msg;
+    				}
+    			});
+    		}
+    	}
+    function subscribeUser(response, form) {
+    	var newsletters = form.querySelectorAll('.subscribe-body input[type="checkbox"]:checked, .subscribe-body input[type="hidden"]'),
+    	email = form.querySelector('input[name="email"]'),
+    	api = '/v3/newsletters/subscriptions/',
+    	env = 'production',
+    	source = form.querySelector('input[name="sourceParam"]') != null ? form.querySelector('input[name="sourceParam"]') : '',
+    	sourceVal = typeof source == 'object' ? source.value : '',
+    	captcha = form.querySelector('.recaptcha');
+    	if (form.hasAttribute('data-service')) {
+    		api = '/stage-v3/newsletters/subscriptions/';
+    		env = form.getAttribute('data-service');
+    	}
+    	var postData = '{'+
+    		'"email-address": "'+email.value+'",'+
+    		'"grecaptcha-site-key": "'+ captcha.getAttribute('data-sitekey')+'",'+
+    		'"captcha-token": "'+response+'",'+
+    		'"version-fe": "v5",'+
+    		'"api-key": "7pfUD54iS16Ow2LRCWFXeaSDVHcoKRzx6eW7T3ha",'+
+    		'"SOURCE": "'+ sourceVal +'",';
+    		// single subscription
+    	if (newsletters.length === 1 && newsletters[0].getAttribute('type') === 'hidden') {
+    		var esp = newsletters[0].getAttribute('data-esp'),
+    		affiliateId = newsletters[0].getAttribute('data-affiliate');
+    		postData += '"esp": "'+esp+'",'+
+    		'"source-newsletter-id": "'+newsletters[0].value+'"';
+    		if (esp == "cm") {
+    			postData += ', "cm-aid": "'+affiliateId+'" }';
+    		} else {
+    			postData += '}';
+    		}
+    	// multiple subscription, send in "batches"
+    	} else {
+    		batches = [],
+    		mc_ids = [],
+    		cm_ids = [];
+    		for (i = 0; i < newsletters.length; ++i) {
+    			var esp = newsletters[i].getAttribute('data-esp'),
+    			affiliateId = newsletters[i].getAttribute('data-affiliate');
+    			if (esp == "mc") {
+    				mc_ids.push('"'+newsletters[i].value+'"');
+    			}
+    			if (esp == "cm") { cm_ids.push('"'+newsletters[i].value+'"'); }
+    		}
+    		if (mc_ids.length) {
+    			var mc_data = '{"esp": "mc", "source-newsletter-id": ['+ mc_ids +']}';
+    			batches.push(mc_data);
+    		}
+    		if (cm_ids.length) {
+    			var cm_data = '{"esp": "cm", "source-newsletter-id": ['+ cm_ids +'], "cm-aid": "'+ affiliateId +'"}';
+    			batches.push(cm_data);
+    		}
+    		postData += '"batches": ['+ batches +']}';
+    	}
+    	var url = 'https://api.nlr.tronc.com'+ api;
+    	var http = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    	http.open("POST", url, true);
+    	http.onreadystatechange = function() {
+    		if(http.readyState == 4 && http.status == 200) {
+                if (env !== 'production') {
+    			    console.log(http.responseText);
+                }
+                var result = JSON.parse(http.responseText);
+    			if (env === 'local' || env == 'stage') {
+    				console.log(result);
+    			}
+    		} else if (http.status != 200) {
+    			if (env !== 'production') {
+    				console.log(http.status);
+    			}
+    		}
+    	}
+    	http.send(postData);
+    	var responseNode = form.querySelector('.response');
+    	responseNode.innerHTML = 'Thank you for subscribing.';
+    	//add green text
+    	if (form.classList) {
+    		form.classList.add('success');
+    	} else {
+    		form.className += '' + cssClass;
+    	}
+    }
+    if(typeof window.subscribeFormLoad === typeof undefined) {
+    	window.subscribeFormLoad = true;
+    }
+    if (window.subscribeFormLoad) {
+    	subscribeForm();
+    	window.subscribeFormLoad = false;
+    }
+    	/**
+    	 * Get closest DOM element up the tree that contains a class, ID, data attribute or tag
+    	 * @param  {Node} elem The base element
+    	 * @param  {String} selector The class, id, data attribute, or tag to look for
+    	 * @return {Node} Null if no match
+    	 */
+    	var getClosest = function (elem, selector) {
+        var firstChar = selector.charAt(0);
+        // Get closest match
+        for ( ; elem && elem !== document; elem = elem.parentNode ) {
+            // If selector is a class
+            if ( firstChar === '.' ) {
+                if ( elem.classList.contains( selector.substr(1) ) ) {
+                    return elem;
+                }
+            }
+            // If selector is an ID
+            if ( firstChar === '#' ) {
+                if ( elem.id === selector.substr(1) ) {
+                    return elem;
+                }
+            }
+            // If selector is a data attribute
+            if ( firstChar === '[' ) {
+                if ( elem.hasAttribute( selector.substr(1, selector.length - 2) ) ) {
+                    return elem;
+                }
+            }
+            // If selector is a tag
+            if ( elem.tagName.toLowerCase() === selector ) {
+                return elem;
+            }
+        }
+        return false;
+    };
+
+</script>
+
+
+    
+        
+        <!-- Google Analytics code -->
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-65208330-4', 'latimes.com');
+              ga('send', 'pageview');
+        </script>
+        
+    
+
+    
+    
+    <footer title="Footer">
+        <nav id="footer-container">
+    <div id="footer">
+        
+            
+                <div id="tos">
+                    <a href="//www.latimes.com/terms">Terms of Service</a> |
+                    <a href="//www.latimes.com/privacy">Privacy<span class="hidden-phone"> Policy</span></a> |
+                    <a href="//www.latimes.com/lat-about-our-ads,0,3875412.htmlstory"><span class="hidden-phone">About Our </span>Ads</a> |
+                    <a href="//www.latimes.com/services/site/la-reprint-request-splash,0,6731163.htmlstory">&copy;</a> |
+                    <a href="//www.latimes.com/about/"><span class="hidden-phone">About This Site</span></a>
+                </div>
+            
+        
+    </div>
+</nav>
+
+    </footer>
+    
+    <script type="text/javascript" src="https://ssor.tribdss.com/reg/tribune/lanews-static.min.js" defer async></script>
+    
+    <script type="text/javascript" src="https://dss.platform.californiatimes.com/meter/latspot.min.js" defer async></script>
+    
+
+
+    
+
+    
+    <script>
+        (function() {
+            /** CONFIGURATION START **/
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+
+            _sf_async_config.uid = 3908;
+            _sf_async_config.domain = 'latimes.com';
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.useCanonicalDomain = true;
+            _sf_async_config.sections = 'bigbuilder';
+            _sf_async_config.authors = 'L.A. Times Studios';
+            /** CONFIGURATION END **/
+            function loadChartbeat() {
+                var e = document.createElement('script');
+                var n = document.getElementsByTagName('script')[0];
+                e.type = 'text/javascript';
+                e.async = true;
+                e.src = '//static.chartbeat.com/js/chartbeat.js';
+                n.parentNode.insertBefore(e, n);
+            }
+            loadChartbeat();
+         })();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+        
+        <script type="text/javascript">
+            ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
+                // Page naming convention:
+                //  <site-slug>:<app-slug>:<path>:<datadesk-slug>-<page-slug>:<content-type>.
+                // Example:
+                //  lat:projects.latimes.com:local:data-pat-tillman:individualarticle.
+                //  (Don't miss the period at the end.)
+                pageName: 'lat:nation:la-na-pol-sanders-donors:individualarticle.',
+                channel: 'nation', // Path
+                server: 'www.latimes.com', // Full domain
+                hier1: 'latimes:nation', // Path (with latimes prefix)
+                hier2: 'nation', // Path (again)
+                prop1: 'D=pageName',
+                prop2: 'nation', // Path (again!)
+                prop38: 'individualarticle', // Content type
+                eVar1: window.location.href, // This URL
+                eVar2: document.referrer, // The referring URL
+                prop57: 'D=c38',
+                eVar20: 'latimes',
+                eVar21: 'D=c38',
+                eVar34: 'D=ch',
+                eVar35: 'D=pageName',
+                events: ''
+            });
+        </script>
+<script src="https://nexus.ensighten.com/caltimes/lat_datadesk_prod/Bootstrap.js" async></script>
+    <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+
+    <!-- METADATA -->
+    <title>Who gives money to Bernie Sanders? - Los Angeles Times</title>
+    
+        <meta charset="utf-8" />
+        <meta name="description" content="Our analysis of nearly 7 million donations offers unprecedented detail about the army that's funded his insurgent campaign." />
+        <meta name="keywords" content="data desk, los angeles times, latimes, l.a. times" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="//d1qqc1e9kvmdh8.cloudfront.net/img/favicon.ico">
+        <link rel="publisher" href="//plus.google.com/u/0/112727226361732924638" />
+        <meta name="google-site-verification" content="a9pAUAoFTyj7Nut3H5OiQ-fUyyqdwdVT7VcFGICrpTo" />
+        
+    
+    <meta property="og:title" content="Who gives money to Bernie Sanders?"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.latimes.com/projects/la-na-pol-sanders-donors/" />
+    <meta property="og:image" content="http://www.latimes.com/projects/la-na-pol-sanders-donors/static/share.png"/>
+    <meta property="og:site_name" content="www.latimes.com"/>
+    <meta property="og:description" content="Our analysis of nearly 7 million donations offers unprecedented detail about the army that's funded his insurgent campaign."/>
+    <meta property="fb:admins" content="1257725335"/>
+    <meta property="fb:app_id" content="171740782909828" />
+    <meta property="twitter:site" content="@latimes" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://www.latimes.com/projects/la-na-pol-sanders-donors/" />
+    <meta property="twitter:title" content="Who gives money to Bernie Sanders?" />
+    <meta property="twitter:description" content="Our analysis of nearly 7 million donations offers unprecedented detail about the army that's funded his insurgent campaign." />
+    <meta property="twitter:image" content="http://www.latimes.com/projects/la-na-pol-sanders-donors/static/share.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Who gives money to Bernie Sanders?",
+      "image": "http://www.latimes.com/projects/la-na-pol-sanders-donors/static/share.png",
+      "datePublished": "2016-06-03",
+      "description": "Our analysis of nearly 7 million donations offers unprecedented detail about the army that's funded his insurgent campaign."
+    }
+    </script>
+    
+
+    <style type="text/css">
+        .met-promo p {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: normal;
+            margin: 0;
+        }
+    </style>
+
+    
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="//d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-0.5.4.min.css" />
+    <link rel="stylesheet" type="text/css" href="//d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="//d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-responsive-0.5.4.min.css" />
+    
+
+    
+    <link rel="stylesheet" href="https://d1qqc1e9kvmdh8.cloudfront.net/js/cartodb.js/v3/3.15/cartodb.css" />
+    <style type="text/css">@font-face{font-family:'Benton Gothic Bold';src:url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.eot');src:url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.eot?#iefix') format('embedded-opentype'),url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.woff') format('woff'),url('https://s3.amazonaws.com/latimes-datadesk-template/fonts/0.5.0/benton-gothic-bold.ttf') format('truetype');font-weight:normal;font-style:normal}.dropcap{line-height:1em}p.byline{font-size:14px}.byline .author{text-transform:none}p.description{font-size:20px}figure.heroic figcaption.figcaption{float:left;margin-top:5px}figure.heroic{height:450px}aside.pull-quote{float:none;max-width:650px;margin:20px auto 15px auto!important}p.description{max-width:650px;margin:20px auto 15px auto!important}.container.top{padding-bottom:30px}#map{width:100%;height:100%;background:#fff}.annotation{font-family:"Benton Gothic Regular",Arial,sans-serif}.annotation strong{font-family:"Benton Gothic Bold",Arial,sans-serif;font-weight:normal!important}#tooltip{width:250px;font-family:"Benton Gothic Regular",Arial,sans-serif;font-size:13px;position:absolute;z-index:99999999;background:white;border-style:solid;border-width:1px;border-color:#D4D4D4;box-shadow:2px 2px 2px rgba(64,64,64,0.3);-moz-box-shadow:2px 2px 2px rgba(64,64,64,0.3);-webkit-box-shadow:2px 2px 2px rgba(64,64,64,0.3);border-radius:2px;-moz-border-radius:2px}.table .tooltip_value{text-align:right}.tooltip_topper{background:#E8E8E8;font-family:"Benton Gothic Bold",Arial,sans-serif;font-weight:normal;font-size:14px;padding:5px;text-align:center}.tooltip_table_container{padding:10px}.tooltip_label{font-size:12px}#tooltip .table{font-size:13px;margin:0;padding:0}#tooltip .table tr:first-child td{border-top:none}#mobile_tooltip{display:none}.legend{font-family:"Benton Gothic Regular",Arial,sans-serif;background:white;padding:7px}.legend strong{display:block;font-family:"Benton Gothic Bold",Arial,sans-serif;font-weight:normal}.legend small{display:block;margin-bottom:5px}.legend-inner{width:255px}.legend-key{width:20%;text-align:left;float:left;font:10px Arial,sans-serif;color:#333;line-height:150%}.overlay{margin:0!important;padding:0!important}#zip_search{text-align:center;outline:0;border:none;box-shadow:none;border-radius:0;background:#fff;font-weight:bold;display:inline-block;color:black;padding:8px;border-bottom:1px solid black;font-family:"Benton Gothic Regular",Arial,sans-serif;width:400px;font-size:20px}#zip_search::-ms-clear{display:none}#zip_search_form{margin-bottom:0px;text-align:center;padding-bottom:25px;margin-top:30px}#zip_search_form i{margin-left:-28px;cursor:pointer;z-index:9999}#mobile_legend{display:none;font-family:Arial,sans-serif;clear:both;margin-left:10px}#mobile_legend strong{font-size:12px}@media (min-width:1200px){figure.heroic{height:750px}}@media (min-width:768px) and (max-width:979px){figure.heroic{height:400px}}@media (max-width:767px){h1{font-size:40px}p.description{font-size:18px}.leaflet-control-zoom{display:none}figure.heroic{height:250px}#map .legend{display:none}.legend-inner{width:290px}.legend-inner small{font-size:11px}#mobile_legend{display:block}#zip_search{width:280px;font-size:18px}#zip_search_form i{margin-left:0px;z-index:9999;font-size:25px}}@media (max-width:480px){h1{max-width:100%!important;font-size:35px}#zip_search{width:250px;font-size:18px}}</style>
+
+
+    <!-- JAVASCRIPT -->
+    
+    
+    <!--[if lt IE 9]>
+          <script type="text/javascript" src="//d1qqc1e9kvmdh8.cloudfront.net/js/html5shiv.js"></script>
+     <![endif]-->
+    
+    <script type="text/javascript" src="//d1qqc1e9kvmdh8.cloudfront.net/js/jquery-1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//d1qqc1e9kvmdh8.cloudfront.net/js/underscore-1.8.3-min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="//cdn.gigya.com/js/socialize.js?apiKey=2_COh26GgfZDptreu0iQ9aknzT_Ig861qYxOHZVxizrZMTn81vygTB-ptN33wgCtrj"></script>
+    <script type="text/javascript" src="//d1qqc1e9kvmdh8.cloudfront.net/js/ngux-tophat-0.5.4.min.js"></script>
+    <!--[if lte IE 7]><script type="text/javascript" src="//d1qqc1e9kvmdh8.cloudfront.net/js/icons-ie7.js"></script><![endif]-->
+    <script type="text/javascript" src="//d1qqc1e9kvmdh8.cloudfront.net/js/ngux-ads-2.4.1.min.js"></script>
+    
+
+    
+    <script src="https://d1qqc1e9kvmdh8.cloudfront.net/js/cartodb.js/v3/3.15/cartodb.js"></script>
+
+    
+    
+</head>
+<body data-ad-path="4011/trb.latimes/news/datadesk" data-ad-ptype="s" data-ad-iframe-url="/projects/static/ngux-tophat-ad-iframe.html" >
+    <!-- NAV -->
+    
+    <div id="tooltip"></div>
+    
+    
+        
+            
+        
+    
+    
+    <nav title="Navigation">
+        <div id="tophat-container">
+    <div id="tophat">
+        
+            <span id="tophat-dropdown">
+                <hr />
+                <hr />
+                <hr />
+            </span>
+            
+                <a id="tophat-logo" href="//www.latimes.com/"></a>
+            
+            
+                <div class="tophat-links">
+                    <ul>
+    <li>
+        <a href="//www.latimes.com/local">Local</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/california">California</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/sports">Sports</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/entertainment">Entertainment</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/nation">Nation</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/world">World</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/business">Business</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/opinion">Opinion</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/style">Lifestyle</a>
+    </li>
+    <li>
+        <a href="//www.latimes.com/travel">Travel</a>
+    </li>
+</ul>
+
+                </div>
+            
+        
+    </div>
+</div>
+
+    </nav>
+    
+
+
+
+    
+    <div class="container top">
+        <header class="center">
+            <div class="sharebuttons clearfix"
+    
+    
+    
+    >
+    <i class="LATFacebook" data-socialshare-type="facebook"></i>
+    <i class="LATTwitter" data-socialshare-type="twitter" ></i>
+    <i class="LATEmail" data-socialshare-type="email"></i>
+</div>
+
+            <h1>Who gives money to Bernie Sanders?</h1>
+            <p class="description">Our analysis of nearly 7 million donations offers unprecedented detail about the army that&#39;s funded his insurgent campaign.</p>
+        </header>
+    </div>
+    <article class="big-build">
+        <div id="mobile_legend" class="legend"></div>
+        <div class="clear"></div>
+        <figure class="heroic">
+            <div id="map"></div>
+        </figure>
+
+        <form id="zip_search_form" class="container">
+            <input type="text" id="zip_search" placeholder="Search a ZIP Code" />
+            <i class="LATSearch01"></i>
+        </form>
+
+        <div class="container">
+            <div style="max-width: 650px; margin: 18px auto;">
+                <p class="byline">
+                    By <span class="author"><a href="http://www.latimes.com/la-bio-seema-mehta-staff.html">Seema Mehta</a>, <a href="http://www.latimes.com/la-bio-anthony-pesce-staff.html">Anthony Pesce</a>, <a href="http://www.latimes.com/la-bio-maloy-moore-staff.html">Maloy Moore</a> and <a href="https://twitter.com/christinezhang">Christine Zhang</a></span>
+                </p>
+                <p class="dateline">
+                    <time datetime="2016-06-03" pubdate>
+                        June 3, 2016
+                    </time>
+                </p>
+            </div>
+            <p><span class="dropcap">S</span>mall-dollar contributions have been the fuel that has propelled Sen. Bernie Sanders&rsquo; presidential bid, making it one of the most successful insurgent campaigns in Democratic party history, but little has been known about those donors because campaigns don&rsquo;t have to publicize&nbsp;the names of people who give $200 or less.</p>
+
+<p>Now, a Times analysis of nearly 7 million individual contributions has provided unprecedented detail about the army of people behind the $27 donations Sanders mentions at virtually every campaign stop.</p>
+
+<div class="right ad-holder">
+    <aside title="Advertisement" class="cube-ad">
+    <div class="tophat-cube" id='div-gpt-ad-240326138443017849-1'>
+        <div class="advert" data-ad-type="cube"></div>
+        <span class="tophat-ad-label">ADVERTISEMENT</span>
+    </div>
+</aside>
+
+</div>
+
+<p>Many resemble Emily Condit, 40 of Sylmar, who has contributed three times &mdash;&nbsp;$5 each &mdash;&nbsp;to the Vermont senator&rsquo;s campaign.</p>
+
+<p>Condit, who has several physical disabilities, is among the largest single group of Sanders&rsquo; donors &mdash;&nbsp;those who don&rsquo;t have a job. Of the $209 million given to the Vermont senator&rsquo;s campaign, about one out of every four dollars came from those not in the workforce, who include the unemployed or retired.</p>
+
+<aside class="pull-quote">
+    <span class="quote">&ldquo;</span>
+    <q>
+        Bernie Sanders is running on a platform to lift up the have-nots and to improve the system of government we have, so that no one will ever be left behind.
+    </q>
+    <span class="quote">&rdquo;</span>
+    <span class="quote-source">&mdash; Emily Condit, a Sanders donor from Sylmar</span>
+    <span class="quote-sharebutton">
+        <a>
+            <i class="LATTwitter" data-socialshare-type="twitter"></i>
+            <i class="LATFacebook" data-socialshare-type="facebook"></i>
+            <i class="LATTriangleDown"></i>
+        </a>
+        <span class="quote-sharetext">Share<span class="visible-desktop"> this quote</span></span>
+    </span>
+</aside>
+
+<p>For the last 15 years, since&nbsp;Condit&nbsp;left&nbsp;a job at NASA, her ailments have kept her from working. She depends on Social Security and lives on a tight budget but has found money for Sanders because she was drawn to his populist message.</p>
+
+<p>&ldquo;I know very well now what it&#39;s like to be a have-not, both financially and physically, and to fall through the cracks of society,&rdquo; she said. &ldquo;Bernie Sanders is running on a platform to lift up the have-nots and to improve the system of government we have, so that no one will ever be left behind.&rdquo;</p>
+
+<figure class="pull-right span6">
+    <img src="/projects/la-na-pol-sanders-donors/static/la-g-sanders-donors-by-sector-2016-06-01.png">
+</figure>
+
+<p>Small-dollar donors such as Condit have allowed Sanders to out-raise his rival, former Secretary of State&nbsp;Hillary Clinton, in the Democratic primary. Clinton had received $190 million through the end of April. (A&nbsp;separate super PAC backing her bid raised an additional $76 million.)&nbsp;</p>
+
+<p>Californians contributed more than $36 million to Sanders&rsquo; campaign, the most money from any state in the nation, according to financial disclosure reports that cover fundraising through the end of April, the most recent available. Sanders has raised the majority of his money here in wealthy, coastal areas that are predominately white. Nine of the top 10 ZIP Codes with the highest rate of giving are north of San Jose, with concentrations in the Berkeley Hills and in scenic enclaves north of the Golden Gate Bridge.</p>
+
+<p>In Los Angeles, Sanders received some of his strongest financial support per person&nbsp;from neighborhoods such as Topanga, Century City, Venice and the Hollywood Hills.</p>
+
+<p>Adjusting for population, Sanders got&nbsp;the most donations from his home state of Vermont and Washington, D.C., where he has served in the Senate and House of Representatives for a quarter century. If the nine-county San Francisco Bay area were its own state, it would rank third on that list.</p>
+
+<p>The analysis&nbsp;of Sanders&rsquo; donations&nbsp;is possible because he relies on a fundraising tool called <a href="http://www.latimes.com/nation/politics/la-na-sanders-actblue-20160324-story.html" target="_blank">ActBlue</a>, required by federal law to disclose all donors, regardless of the size of the contribution.</p>
+
+<p>The Times combined federal reports from ActBlue and Sanders&rsquo; campaign to conduct an unprecedented analysis of Sanders&rsquo; contributors, including identifying people who had given multiple times.</p>
+
+<p>This provided a window into the&nbsp;more than 1 million&nbsp;small-dollar contributors&nbsp;who gave&nbsp;nearly two-thirds of his money. These donors are typically invisible because election law only requires campaigns to disclose the identities of people who contribute more than $200.</p>
+
+<p>The only contributors this analysis does not cover are small-dollar donors who gave directly to Sanders’ campaign committee. They accounted for about 10% of his donations.</p>
+
+<p>Clinton is less reliant on small-dollar&nbsp;donors, who accounted for about 20% of her fundraising haul, and a&nbsp;similar analysis of the Democratic front-runner&rsquo;s small donors is not possible because she has not leaned upon a conduit such as ActBlue.</p>
+
+<figure class="pull-right span6">
+    <img src="/projects/la-na-pol-sanders-donors/static/la-g-sanders-fundraising-peaks-in-march-2016-06-01.png" />
+</figure>
+
+<p>Sanders donors tend to live in the most liberal parts of the United States &mdash; New England, the Pacific Northwest and California &mdash;&nbsp;and in the ZIP Codes with a high proportion of college graduates. With the exception of urban areas such as Austin, Texas, and Santa Fe, N.M.,&nbsp;he draws far fewer donations in the redder parts of the nation &mdash; the South, the Sunbelt and the Midwest.</p>
+
+<p>After the jobless, people who work in the healthcare, education and technology fields are the next largest sources of Sanders&rsquo; funds.</p>
+
+<p>&ldquo;I just feel he&rsquo;s honest,&nbsp;he&rsquo;s straightforward, dependable,&nbsp;trustworthy and&nbsp;doesn&rsquo;t change his tune to get votes,&rdquo; said&nbsp;Connie Whalley, a nurse practitioner&nbsp;who left her job three years ago to spend more time with her family.</p>
+
+<p>The 66-year-old Topanga resident has contributed&nbsp;$622 to Sanders&rsquo; campaign in 22 separate donations because she was impressed by his calls for a $15 minimum wage, tuition-free public college, campaign-finance reform and most of all, single-payer healthcare.</p>
+
+<p>&ldquo;I honestly believe everyone has the right to free healthcare and&hellip; I just think it is unspeakable we have insurance companies that are making profits off people&rsquo;s health,&rdquo; she said.</p>
+
+<p>Not surprisingly, Sanders gets very little money &mdash;&nbsp;2% of his overall haul &mdash;&nbsp;from Wall Street, which he frequently criticizes as &ldquo;corrupt&rdquo; and responsible for creating a &ldquo;rigged economy.&rdquo; Students, who are vocal Sanders&rsquo; supporters, gave even less.</p>
+
+<p>Sanders constantly touts that the average donation to his campaign is $27, a line he&rsquo;s repeated so often that supporters shout out the dollar amount at his rallies.</p>
+
+<figure class="pull-right span4">
+    <img src="https://www.trbimg.com/img-574c91de/turbine/la-connie-kazmer-is-one-of-bernie-sanders-most-frequent-campaign-donors-in-california-she-has-sent-him-20160530" />
+    <figcaption class="figcaption">Connie Kazmer, who gave to Sanders more than 100 times, at her home in Granada Hills. (Kirk McKoy / Los Angeles Times)
+    </figcaption>
+</figure>
+
+<p>The figure is accurate&nbsp;and once it became a symbol of Sanders&rsquo; bid, the campaign provided a $27 donation button on its website. About<strong>&nbsp;</strong>10% of his donations are for that amount.</p>
+
+<p>Because Sanders&rsquo; backers tend to donate multiple times, the average donor gave a total of&nbsp;$96. His typical donor contributes three times, but loyal cohorts tap their bank accounts far more frequently, in part because the campaign&#39;s fundraising system encourages supporters to set up weekly or monthly automated contributions.</p>
+
+<p>Other donors, such as Connie Kazmer of Granada Hills, said they went on spending sprees any time they felt moved by the campaign. The 60-year-old sound editor said she watched every Democratic debate with her laptop open, ready to give when something riled her.</p>
+
+<p>Over the course of nine debates, Kazmer donated more than 100 times, topping $2,200 in contributions.</p>
+
+<p>&ldquo;I had to pace myself,&rdquo; Kazmer said.&nbsp;</p>
+
+<p>Jeremy Abramowitz, a recent graduate from the College of William and Mary in Virginia, gave Sanders&rsquo; campaign more than $5,000&nbsp;in more than 200 separate donations.</p>
+
+<p>Abramowitz, 31, started sending money after reading negative posts about Sanders on Facebook. He soon lost track of how much he was giving.</p>
+
+<p>&ldquo;When somebody said something that annoyed me, I&rsquo;d give an extra dollar,&rdquo; said the Williamsburg, Va., resident. &ldquo;It all just added up.&rdquo;</p>
+
+<p>After Abramowitz hit the legal limit on what he could give the campaign&nbsp;&mdash; $5,400 &mdash; he channeled his energy into volunteering for Sanders at a phone bank. He averages 1,000 calls a day, he said.</p>
+
+<p><a href="mailto:seema.mehta@latimes.com,anthony.pesce@latimes.com,maloy.moore@latimes.com,christine.zhang@latimes.com">Contact the reporters</a></p>
+
+<p class="sources" style="clear:both;">
+    Times staff writer Sandra Poindexter contributed to this report.
+</p>
+
+<p class="sources" style="clear:both;">
+    Page design and production by Anthony Pesce, Jon Schleuss and Lily Mihalik.
+</p>
+
+<p class="sources" style="clear:both; margin-bottom: 40px; ">Sources: Federal Election Commission, Center for Responsive Politics, U.S. Census, Times analysis.</p>
+
+<aside>
+    <aside title="Advertisement" class="banner-ad">
+    <div class="tophat-banner-container">
+        <div class="tophat-banner">
+            <div class="advert"></div>
+            <span class="tophat-ad-label">ADVERTISEMENT</span>
+        </div>
+    </div>
+</aside>
+
+</aside>
+
+<div class="viafoura">
+    <div class="vf-comments vf-widget" data-widget="comments"></div>
+</div>
+
+<aside class="mlt">
+    <h2><a href="http://www.latimes.com/projects/" title="L.A. Times Data Desk"><i class="LATLink"></i> More California Primary coverage from the Los Angeles Times</a></h2>
+    <ul>
+        <li>
+            <figure>
+                <a href ="http://www.latimes.com/politics/la-pol-ca-american-independent-party-california-voter-registration-card-20160419-story.html">
+                    <img src="https://www.trbimg.com/img-5718520d/turbine/la-pol-ca-american-independent-party-californi-001/300/300x300">
+                </a>
+            </figure>
+            <a href="http://www.latimes.com/politics/la-pol-ca-american-independent-party-california-voter-registration-card-20160419-story.html"><span>Would-be independents joining the American Independent Party could blame California's voter registration card</span></a>
+        </li>
+        <li>
+            <figure>
+                <a href="http://www.latimes.com/politics/la-pol-ca-latimes-presidential-primary-poll-20160602-snap-story.html">
+                    <img src="https://www.trbimg.com/img-5750a780/turbine/la-1464903706-snap-photo/300/300x300">
+                </a>
+            </figure>
+            <a href="http://www.latimes.com/politics/la-pol-ca-latimes-presidential-primary-poll-20160602-snap-story.html"><span>Analysis: Bernie Sanders and Hillary Clinton in a tight race in California as the campaign batters her popularity</span></a>
+        </li>
+        <li>
+            <figure>
+                <a href="http://www.latimes.com/politics/la-na-clinton-brown-endorsement-20160531-snap-story.html">
+                    <img src="https://www.trbimg.com/img-5748b2dc/turbine/la-1464382308-snap-photo/300/300x300">
+                </a>
+            </figure>
+            <a href="http://www.latimes.com/politics/la-na-clinton-brown-endorsement-20160531-snap-story.html"><span>Why Gov. Jerry Brown endorsed Hillary, despite a bitter history with the Clintons</span></a>
+        </li>
+        <li>
+            <figure>
+                <a href="http://www.latimes.com/politics/la-na-pol-sanders-central-valley-20160530-snap-story.html">
+                    <img src="https://www.trbimg.com/img-574c10f8/turbine/la-1464603015-snap-photo/300/300x300">
+                </a>
+            </figure>
+            <a href="http://www.latimes.com/politics/la-na-pol-sanders-central-valley-20160530-snap-story.html"><span>Analysis: Bernie Sanders looks for success in an 'unbelievable' place: California's Central Valley</span></a>
+        </li>
+    </ul>
+</aside>
+        </div>
+    </article>
+
+    <script type="text/jst" id="tooltip_template">
+        <div class="tooltip_topper">
+            ZIP: <%= zcta5ce10 %>
+        </div>
+        <div class="tooltip_table_container">
+            <table class="table table-condensed">
+                <tr>
+                    <td class="tooltip_label">Total contributions</td>
+                    <td class="tooltip_value">$<%= commafy(total.toFixed(0)) %></td>
+                </tr>
+                <tr>
+                    <td class="tooltip_label">Population</td>
+                    <td class="tooltip_value"><%= commafy(population) %></td>
+                </tr>
+                <tr>
+                    <td class="tooltip_label">Contributions per capita</td>
+                    <td class="tooltip_value">$<%= per_capita.toFixed(2) %></td>
+                </tr>
+            </table>
+        </div>
+    </script>
+
+    <script type="text/jst" id="css_template">
+        #zcta_census_2014{
+            polygon-fill: #F1EEF6;
+            polygon-opacity: 1;
+            line-color: #FFF;
+            line-width: 0;
+            line-opacity: 0;
+        }
+        <% _.each(breaks, function(br) { %>
+            #zcta_census_2014 [ per_capita < <%= br.upper %>] {
+                polygon-fill: <%= br.color %>;
+            }
+        <% }); %>
+    </script>
+
+    <script type="text/jst" id="legend_template">
+        <div class="overlay legend leaflet-control">
+            <div class="legend-inner">
+                <strong>Contributions per capita</strong>
+                <small>Donations from each ZIP Code divided by population</small>
+            <% _.each(breaks.reverse(), function(br) { %>
+                <div class="legend-key" style="border-top:10px solid <%= br.color %>;"><span><%= br.pretty %></span></div>
+            <% }); %>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </script>
+
+    <script type="text/jst" id="search_query_template">
+        SELECT
+            ST_XMin(ST_Extent(the_geom)) as minx,
+            ST_YMin(ST_Extent(the_geom)) as miny,
+            ST_XMax(ST_Extent(the_geom)) as maxx,
+            ST_YMax(ST_Extent(the_geom)) as maxy,
+            ST_ASGEOJSON(the_geom) as geometry
+        FROM
+            (
+                SELECT
+                    *
+                FROM
+                    zcta_census_2014
+                WHERE
+                    zcta5ce10 = '<%= zip %>'
+            )
+        AS
+            subq
+        GROUP BY
+            geometry
+    </script>
+
+    <style type="text/cartocss" id="basemap_css">
+        #us_states_census {
+          polygon-fill: #eee;
+          polygon-opacity: 0.25;
+          line-color: #FFF;
+          line-width: 0;
+          line-opacity: 0;
+        }
+    </style>
+
+    <style type="text/cartocss" id="cities_css">
+        [zoom > 5][pop_2000 > 750000],
+        [zoom > 6][pop_2000 > 200000],
+        [zoom > 6][feature=~".*State Capital.*"],
+        [zoom > 7][pop_2000 > 25000],
+        [zoom > 8][pop_2000 > 10000] {
+            #us_notable_cities{
+              marker-fill-opacity: 0.8;
+              marker-line-color: #FFF;
+              marker-line-width: 0.5;
+              marker-line-opacity: 1;
+              marker-placement: point;
+              marker-type: ellipse;
+              marker-width: 8;
+              marker-fill: #000;
+              marker-allow-overlap: true;
+            }
+            #us_notable_cities::labels {
+              text-name: [name];
+              text-face-name: 'Lato Bold';
+              text-size: 12;
+              text-label-position-tolerance: 0;
+              text-fill: #000;
+              text-halo-fill: #FFF;
+              text-halo-radius: 1;
+              text-dy: -10;
+              text-allow-overlap: false;
+              text-placement: point;
+              text-placement-type: simple;
+            }
+        }
+    </style>
+
+    <style type="text/cartocss" id="outline_css">
+        #us_states_outline {
+            line-color: #FFF;
+            line-width: 1.5;
+            line-opacity: 1;
+        }
+        [zoom > 6] {
+            #us_states_outline {
+                line-color: #000;
+                line-width: 1;
+                line-opacity: 0.8;
+                line-dasharray: 10, 3, 2, 3;
+            }
+        }
+    </style>
+
+    <script type="text/jst" id="states_css_template">
+        #us_states_census {
+            polygon-opacity: 0;
+            line-opacity: 0;
+        }
+        [zoom > <%= zoom %>] {
+            #us_states_census::labels {
+              text-name: [stusps];
+              text-face-name: "Lato Bold";
+              text-size: 13;
+              text-label-position-tolerance: 0;
+              text-fill: #000;
+              text-halo-fill: #FFF;
+              text-halo-radius: 1;
+              text-allow-overlap: false;
+              text-placement: point;
+              text-placement-type: simple;
+            }
+        }
+        [zoom > <%= zoom + 1 %>] {
+            #us_states_census::labels {
+              text-name: [name];
+              text-face-name: "Lato Bold";
+              text-size: 14;
+              text-label-position-tolerance: 0;
+              text-fill: #000;
+              text-halo-fill: #FFF;
+              text-halo-radius: 1;
+              text-allow-overlap: false;
+              text-placement: point;
+              text-placement-type: simple;
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        function commafy(num) {
+            var s = String(num);
+            var cs = s.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return cs;
+        }
+        var search_query_template = _.template($('#search_query_template').html()),
+            states_css_template = _.template($('#states_css_template').html()),
+            css_template = _.template($('#css_template').html()),
+            tooltip_template = _.template($('#tooltip_template').html()),
+            legend_template = _.template($('#legend_template').html()),
+            tooltip = $('#tooltip'),
+            windowWidth = document.documentElement.clientWidth,
+            windowHeight = document.documentElement.clientHeight,
+            clicky = $('#zip_search_form i'),
+            zip_search = $('#zip_search'),
+            zip_search_form = $('#zip_search_form'),
+            breaks = [{
+                color: '#006d2c',
+                upper: 1000,
+                pretty: '$2'
+            }, {
+                color: '#31a354',
+                upper: 2,
+                pretty: '$1'
+            }, {
+                color: '#74c476',
+                upper: 1,
+                pretty: '$0.25'
+            }, {
+                color: '#bae4b3',
+                upper: 0.25,
+                pretty: '$0.10'
+            }, {
+                color: '#edf8e9',
+                upper: 0.1,
+                pretty: '0'
+            }];
+        var initZoom = 4;
+        if (windowWidth >= 1200) {
+            initZoom = 5;
+        } else if (windowWidth < 768) {
+            initZoom = 3;
+        }
+        var map = new L.Map('map', {
+            center: new L.LatLng(37.978845040497106, -95.97656249999999),
+            zoom: initZoom,
+            minZoom: 3,
+            maxZoom: 11,
+            maxBounds: L.latLngBounds(L.latLng(14, -180), L.latLng(72, -50))
+        });
+        map.scrollWheelZoom.disable();
+        var dataLayer = cartodb.createLayer(map, {
+            user_name: 'latimes',
+            type: 'cartodb',
+            cartodb_logo: false,
+            https: true,
+            no_cdn: true,
+            sublayers: [{
+                https: true,
+                sql: "SELECT * FROM us_states_census",
+                cartocss: $('#basemap_css').html()
+            }, {
+                https: true,
+                sql: "SELECT zcta_census_2014.the_geom_webmercator, zcta_census_2014.zcta5ce10, sanders_zips_2016.zip, sanders_zips_2016.median_household_income, sanders_zips_2016.per_capita, sanders_zips_2016.population, sanders_zips_2016.total FROM zcta_census_2014, sanders_zips_2016 WHERE zcta_census_2014.zcta5ce10 = sanders_zips_2016.zip",
+                cartocss: css_template(breaks),
+                interactivity: ['zcta5ce10', 'median_household_income', 'per_capita', 'population', 'total']
+            }, {
+                https: true,
+                sql: "SELECT * FROM us_states_census",
+                cartocss: states_css_template({
+                    zoom: initZoom
+                })
+            }, {
+                https: true,
+                sql: "SELECT * FROM us_states_outline",
+                cartocss: $('#outline_css').html()
+            }, {
+                https: true,
+                sql: "SELECT * FROM us_notable_cities",
+                cartocss: $('#cities_css').html()
+            }]
+        }).addTo(map).done(function(layer) {
+            layer.getSubLayer(1).setInteraction(true);
+            layer.on('featureOver', function(e, latlng, pos, data, subLayerIndex) {
+                var html = tooltip_template(data);
+                tooltip.html(html).show();
+            });
+            layer.on('featureOut', function(e, latlng, pos, data, subLayerIndex) {
+                tooltip.hide();
+            });
+            layer.on('featureClick', function(e, latlng, pos, data, subLayerIndex) {
+                var html = tooltip_template(data);
+                tooltip.html(html).show();
+            });
+            layer.on('mouseout', function() {
+                tooltip.hide();
+            });
+        });
+        var annotations = {
+            5: {
+                'bay_points': [new L.LatLng(37.5, -122.75), new L.LatLng(30, -122.75), new L.LatLng(30, -121)],
+                'vermont_points': [new L.LatLng(43, -72.8), new L.LatLng(39, -72.8)],
+                'bay_pos': [31, -116],
+                'vermont_pos': [38.5, -70],
+                'miss_points': [new L.LatLng(30.7, -89), new L.LatLng(28.2, -89)],
+                'miss_pos': [28.4, -90]
+            },
+            4: {
+                'bay_points': [new L.LatLng(37.8, -123), new L.LatLng(31.5, -123)],
+                'vermont_points': [new L.LatLng(43, -72.8), new L.LatLng(38, -72.8)],
+                'bay_pos': [31, -118],
+                'vermont_pos': [37.5, -66],
+                'miss_points': [new L.LatLng(30.7, -89), new L.LatLng(28.8, -89)],
+                'miss_pos': [28.4, -89]
+            }
+        };
+        if (initZoom > 3) {
+            var anno = annotations[initZoom];
+            L.marker(anno.bay_pos, {
+                icon: L.divIcon({
+                    iconSize: [200, 110],
+                    iconAnchor: [100, 2],
+                    html: "<strong>Bay Area: $1.92</strong><br />If it were a state, it would rank third in the nation.",
+                    className: 'annotation'
+                })
+            }).addTo(map);
+            var pl = new L.polyline(anno.bay_points, {
+                color: '#000',
+                weight: 1,
+                opacity: 1,
+                className: 'annotation'
+            }).addTo(map);
+            L.marker(anno.vermont_pos, {
+                icon: L.divIcon({
+                    iconSize: [150, 110],
+                    iconAnchor: [100, 2],
+                    html: "<strong>Vermont: $9.86</strong><br />Sanders' home state gave the most per person.",
+                    className: 'annotation'
+                })
+            }).addTo(map);
+            var pl = new L.polyline(anno.vermont_points, {
+                color: '#000',
+                weight: 1,
+                opacity: 1,
+                className: 'annotation'
+            }).addTo(map);
+            if (initZoom === 5) {
+                L.marker(anno.miss_pos, {
+                    icon: L.divIcon({
+                        iconSize: [200, 110],
+                        iconAnchor: [100, 2],
+                        html: "<strong>Mississippi: $0.09</strong><br />Southern states, where Clinton overwhelmingly won the vote, gave the least.",
+                        className: 'annotation'
+                    })
+                }).addTo(map);
+                var pl = new L.polyline(anno.miss_points, {
+                    color: '#000',
+                    weight: 1,
+                    opacity: 1,
+                    className: 'annotation'
+                }).addTo(map);
+            }
+        }
+        map.on('zoomend', function() {
+            if (map.getZoom() === initZoom) {
+                $('.annotation').show();
+            } else {
+                $('.annotation').hide();
+            }
+        });
+        var legend = L.control({
+            position: 'topright'
+        });
+        legend.onAdd = function(map) {
+            var div = L.DomUtil.create('div', 'info legend'),
+                html = legend_template(breaks);
+            div.innerHTML = html;
+            $('#mobile_legend').html(html);
+            return div;
+        };
+        legend.addTo(map);
+
+        function calcWin() {
+            windowWidth = document.documentElement.clientWidth;
+            windowHeight = document.documentElement.clientHeight;
+        }
+        var dbcCalcWin = _.debounce(calcWin, 200);
+        $(window).resize(function() {
+            dbcCalcWin();
+        });
+        var tw = false,
+            th = false;
+        $('#map').on('mousemove click', function(e) {
+            if (!tw || !th) {
+                tw = tooltip.outerWidth();
+                th = tooltip.outerHeight();
+            }
+            var tooltipHeight = tooltip.height(),
+                mouseY = e.pageY + 30,
+                mouseX = e.pageX - (tw / 2);
+            if (windowWidth < (mouseX + tw) + 5) {
+                mouseX = windowWidth - (tw + 5);
+            }
+            if (e.pageX < (tw / 2) + 5) {
+                mouseX = 5;
+            }
+            tooltip.css({
+                "top": mouseY + "px",
+                "left": mouseX + "px"
+            });
+        });
+        $('#map').mouseout(function(e) {
+            tooltip.hide();
+        });
+        zip_search_form.submit(function(e) {
+            var zip = zip_search.val();
+            if (zip) {
+                var query = search_query_template({
+                    zip: zip
+                }).replace(/\s\s+/g, ' ');
+                $.getJSON('https://latimes.cartodb.com/api/v2/sql/?q=' + query).done(function(data) {
+                    if (data.rows.length === 1) {
+                        var bounds = data.rows[0];
+                        $('.leaflet-clickable').not($('.annotation')).parent('g').remove();
+                        L.geoJson(JSON.parse(bounds.geometry), {
+                            style: {
+                                weight: 1.5,
+                                opacity: 1,
+                                color: 'black',
+                                fillOpacity: 0
+                            }
+                        }).addTo(map);
+                        map.fitBounds([
+                            [bounds.maxy, bounds.maxx],
+                            [bounds.miny, bounds.minx]
+                        ]);
+                    } else if (data.rows.length > 1) {
+                        zip_search.val("Search returned more than one");
+                        zip_search.select();
+                    } else {
+                        zip_search.val("Zip code not found");
+                        zip_search.select();
+                    }
+                }).error(function() {
+                    zip_search.val("Error, try again");
+                    zip_search.select();
+                });
+                clicky.addClass('LATClose01').removeClass('LATSearch01');
+            } else {
+                $('.leaflet-clickable').not($('.annotation')).parent('g').remove();
+                map.setView(new L.LatLng(37.978845040497106, -95.97656249999999), initZoom);
+            }
+            e.preventDefault();
+            return false;
+        });
+        $('#zip_search_form').on('click', 'i.LATSearch01', function() {
+            zip_search_form.submit();
+        });
+        $('#zip_search_form').on('click', 'i.LATClose01', function() {
+            zip_search.val('');
+            zip_search_form.submit();
+            clicky.removeClass('LATClose01').addClass('LATSearch01');
+        });
+    </script>
+
+
+
+    
+
+        <!-- Google Analytics code -->
+        <script type="text/javascript">
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-65208330-4', 'latimes.com');
+              ga('send', 'pageview');
+        </script>
+        
+        
+
+    
+
+    
+    
+    <footer title="Footer">
+        <div id="footer-container">
+    <div id="footer">
+        
+            
+                <a id="footer-logo" href="//www.latimes.com/"></a>
+            
+            
+                <div id="tos">
+                    <a href="//www.tribpub.com/central-terms-of-service/">Terms of Service</a> |
+                    <a href="//www.tribpub.com/privacy-policy-and-your-privacy-rights/">Privacy Policy</a> |
+                    <a href="//www.latimes.com/lat-about-our-ads,0,3875412.htmlstory">About Our Ads</a> |
+                    <a href="//www.latimes.com/services/site/la-reprint-request-splash,0,6731163.htmlstory">&copy; <script type="text/javascript">document.write(new Date().getFullYear())</script></a> |
+                    <a href="//www.latimes.com/about/">About This Site</a>
+                </div>
+            
+        
+    </div>
+</div>
+
+    </footer>
+    
+    <script type="text/javascript" src="//ssor.tribdss.com/reg/tribune/lanews-static.min.js" defer async></script>
+    
+    <script type="text/javascript">(window.registration || (registration = [])).push('viafoura');</script>
+
+
+    
+
+    
+    <script type="text/javascript">
+    var _sf_async_config={};
+        /** CONFIGURATION START **/
+        _sf_async_config.uid = 3908;
+        _sf_async_config.domain = 'latimes.com';
+        _sf_async_config.useCanonical = true;
+        _sf_async_config.sections = 'bigbuilder';
+        _sf_async_config.authors = 'Seema Mehta, Anthony Pesce, Maloy Moore and Christine Zhang';
+        /** CONFIGURATION END **/
+        (function(){
+          function loadChartbeat() {
+            window._sf_endpt=(new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+          }
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != 'function') ?
+             loadChartbeat : function() { oldonload(); loadChartbeat(); };
+        })();
+    </script>
+    
+
+</body>
+<!--Good with data?-->
+<!--Tired of grinding on the same old apps?-->
+<!--Want to use your skills in defense of truth, justice and the American way?-->
+<!--Email datadesk@latimes.com and let us know you're out there.-->
+</html>

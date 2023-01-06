@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    
+    <!--
+                                              _..
+      ____     _   _____   _     ___..-"""-.  `)^|   .-"""-..___    ____   _____  ____   _  __
+     |  _ \   / \ |_   _| / \   `-...___ `=.`-.`  \-`.=` ___...-`  |  _ \ | ____|/ ___| | |/ /
+     | | | | / _ \  | |  / _ \          `\  ` ##### `  /`          | | | ||  _|  \___ \ | ` /
+     | |_| |/ ___ \ | | / ___ \           `--;|||||;--`            | |_| || |___  ___) || . \
+     |____//_/   \_\|_|/_/   \_\             /\|||/\               |____/ |_____||____/ |_|\_\
+    _______________________________________ ( /;-;\ ) _________________________________________
+                                             `-...-`
+    -->
+    <!-- Created on July 25, 2019, using v1.3.22 of the Los Angeles Times Data Desk's base templates -->
+    
+    
+    <!-- Good with data? -->
+    <!-- Tired of grinding on the same old apps? -->
+    <!-- Want to use your skills in defense of truth, justice and the American way? -->
+    <!-- Email datadesk@latimes.com and let us know you're out there. -->
+    
+
+    
+    <link href="https://nexus.ensighten.com" rel="preconnect">
+    <link href="https://static.chartbeat.com" rel="preconnect">
+    <link href="https://ping.chartbeat.com" rel="preconnect">
+    <link href="https://www.tribdss.com" rel="preconnect">
+    <link href="https://ssor.tribdss.com" rel="preconnect">
+    <link href="https://latimes.signon.trb.com" rel="preconnect">
+    <link href="https://d1qqc1e9kvmdh8.cloudfront.net" rel="preconnect" crossorigin>
+    
+
+    <!-- METADATA -->
+    <title>Which Democrat is your L.A. block backing? - Los Angeles Times</title>
+    
+    <meta charset="utf-8" />
+    <meta name="description" content="Follow the money in your neighborhood, and all across L.A." />
+    <meta name="keywords" content="data desk, los angeles times, latimes, l.a. times" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/favicon-32x32.ico" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/favicon-16x16.ico" sizes="16x16">
+    
+    
+        
+        <link rel="canonical" href="https://www.latimes.com/projects/2020-democrat-la-county-donor-maps/">
+    
+
+    
+    
+    <meta property="og:title" content="Which Democrat is your L.A. block backing?"/>
+    
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://www.latimes.com/projects/2020-democrat-la-county-donor-maps/" />
+    <meta property="og:image" content="https://www.latimes.com/projects/2020-democrat-campaign-donors-maps/static/img/share.png"/>
+    <meta property="og:site_name" content="www.latimes.com"/>
+    <meta property="og:description" content="Follow the money in your neighborhood, and all across L.A."/>
+    <meta property="fb:admins" content="1257725335"/>
+    <meta property="fb:app_id" content="119932621434123" />
+    <meta property="twitter:site" content="@latimes" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.latimes.com/projects/2020-democrat-la-county-donor-maps/" />
+    
+    <meta property="twitter:title" content="Which Democrat is your L.A. block backing?" />
+    
+    <meta property="twitter:description" content="Follow the money in your neighborhood, and all across L.A." />
+    <meta property="twitter:image" content="https://www.latimes.com/projects/2020-democrat-campaign-donors-maps/static/img/share.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      
+      "headline": "Which Democrat is your L.A. block backing?",
+      
+      "image": {
+          "@type": "ImageObject",
+          "contentUrl": "https://www.latimes.com/projects/2020-democrat-campaign-donors-maps/static/img/share.png",
+          "url": "https://www.latimes.com/projects/2020-democrat-campaign-donors-maps/static/img/share.png",
+          "representativeOfPage": true
+      },
+      "datePublished": "2019-08-07",
+      "description": "Follow the money in your neighborhood, and all across L.A.",
+      "publisher": {
+          "@type": "Organization",
+          "name": "Los Angeles Times",
+          "url": "http://www.latimes.com",
+          "location": {
+              "@type": "Place",
+              "name": "Los Angeles"
+          },
+          "logo": {
+              "@type": "ImageObject",
+              "contentUrl": "http://cookbook.latimes.com/img/ngux-tophat/logos/lat_logo_730_black.png",
+              "url": "http://cookbook.latimes.com/img/ngux-tophat/logos/lat_logo_730_black.png"
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "Anthony Pesce, Maloy Moore, Iris Lee and Ryan Murphy"
+      }
+    }
+    </script>
+    
+
+    
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-1.3.22.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-responsive-1.3.22.min.css" />
+    
+    
+    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css' />
+    <style type="text/css">article.big-build .container h2 {
+  max-width: 800px;
+}
+
+.shares {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.shares__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a.shares__item {
+  color: #282828;
+}
+
+a.shares__item:hover {
+  color: #666666;
+}
+
+/* section {
+    margin-bottom: 100px;
+} */
+
+section.candidates h2 {
+  font-family: 'Benton Gothic', Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.candidate div.head {
+  display: block;
+  clear: both;
+  max-width: 530px;
+  margin: 40px auto 80px auto;
+}
+
+.candidate div.led,
+.candidate div.analysis {
+  max-width: 630px;
+  margin: 30px auto;
+}
+
+.candidate div.head .img-wrapper {
+  vertical-align: middle;
+  display: inline-table;
+  float: left;
+}
+.candidate div.head img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.candidate div.head div.txt-wrapper {
+  display: inline-table;
+  vertical-align: middle;
+  float: left;
+  margin-left: 25px;
+}
+.candidate div.head h2 {
+  font-family: 'Benton Gothic', Arial, sans-serif;
+  margin-top: 45px;
+}
+
+@media (max-width: 767px) {
+  .candidate div.head img {
+    width: 75px;
+    height: 75px;
+    border-radius: 150px;
+  }
+  .candidate div.head h2 {
+    margin-top: 10px;
+  }
+  .candidate div.head {
+    display: block;
+    clear: both;
+    max-width: 530px;
+    margin: 0px 0px 55px auto;
+  }
+}
+
+@media (max-width: 638px) {
+  .candidate div.head {
+    margin: 40px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    margin-top: 5px;
+  }
+  section.candidates h2 {
+    margin-bottom: 1px;
+  }
+}
+
+@media (max-width: 375px) {
+  .txt-wrapper h2 {
+    text-align: center !important;
+  }
+  .candidate div.head .img-wrapper {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  .candidate div.head div.txt-wrapper {
+    display: block;
+    float: none;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .candidate div.head {
+    margin: 40px auto 25px auto;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  header.center h1,
+  header.center p.description,
+  header.center p.byline,
+  header.center p.dateline {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .shares {
+    float: left;
+    text-align: left;
+  }
+  article.big-build .container h2,
+  section.sixpack h2,
+  section.leaderboard h2,
+  .map-control-section h2,
+  .map-control-section p {
+    text-align: left;
+  }
+}
+
+.lazy-image {
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+}
+
+.lazy {
+  opacity: 0;
+}
+
+input[type="text"] {
+  height:auto;
+  padding: 6px 35px;
+  margin:0;
+}
+
+.map {
+  position:relative;
+  width:100%;
+  margin: 0 !important;
+}
+
+.map-control-section {
+}
+
+.map-control-section h2 {
+  font-family: 'Benton Gothic';
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.map-control-section p {
+  /* margin-top: .5rem !important;
+  line-height: 1.3; */
+}
+
+#app{
+  height:640px;
+  margin-bottom: 20px;
+}
+
+#legend-box{
+  position:absolute;
+  width: 82px;
+  font-family: 'Benton Gothic';
+  height: 167px;
+  bottom: 40px;
+  left: 5px;
+  background-color: none;
+  z-index:100;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: white;
+}
+
+#legend-wrapper{
+  display: grid;
+  width: 40px;
+  height: 130px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.legend-grid{
+  opacity: 0.7;
+  margin: 0;
+  padding: 2px 0;
+}
+.legend-grid span {
+    color: white;
+    padding: 4px;
+}
+
+
+#console{
+  background-color: white;
+  border: 2px solid grey;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  width: 250px;
+  margin-right: 15px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+#console p{
+  line-height: 1.5em;
+  font-size: 14px;
+  margin: 10px;
+  text-align: left;
+}
+
+#poptable{
+  width:90%;
+  line-height: 20px;
+  margin: 5% 8px;
+  max-width: 630px;
+  padding: 8px;
+}
+
+#poptable-holder{
+  visibility:hidden
+  width:100%;
+}
+
+.no-table{
+  height: 100px;
+  overflow-y: hidden !important;
+}
+
+@media (orientation: portrait) {
+  #app{
+      height:500px;
+      margin-bottom: 20px;
+  }
+  #console {
+    width:98%;
+    max-width: 400px;
+    bottom:0;
+    top:unset;
+    margin:auto;
+  }
+  #poptable{
+    margin: 2% 8px;
+  }
+  #poptable td{
+    text-align: center !important;
+    font-size: 12px !important;
+    padding: 4px 3px !important;
+  }
+
+  #legend-box{
+    position: absolute;
+    width:100%;
+    max-width: 325px;
+    font-family: 'Benton Gothic';
+    height: 18px;
+    top: 0px;
+    left: unset;
+    right: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: white;
+  }
+
+  #legend-wrapper{
+    display: in-line-block;
+    width: 325px;
+    height: 110px;
+    right: -6px;
+    top: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .legend-grid{
+    margin: 0;
+  }
+
+  .legend-grid span{
+    left:unset;
+    color:white;
+    top:unset;
+    font-weight:bolder;
+  }
+}
+
+@media(max-width: 600px) {
+    .mapboxgl-ctrl-geocoder--icon-search {
+        top: 6px;
+    }
+}
+
+.super-text-right {
+  text-align: right !important;
+}
+
+.geocoder {
+  margin-bottom: 1.25rem;
+  max-width: 630px;
+}
+
+.mapboxgl-ctrl-geocoder {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.mapboxgl-ctrl-geocoder input {
+  font-size: 1.125rem;
+}
+
+.mapboxgl-ctrl-top-right {
+  display: none;
+}
+
+#geocoder{
+  position: relative;
+  z-index: 500;
+}
+
+/*.suggestions-wrapper{
+  position:relative;
+  z-index: 500;
+}*/
+
+.candidate figure.svg-map {
+    margin: 10px auto;
+}
+
+div.maptych {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+div.maptych figure {
+    float: left;
+    display: inline-block;
+    margin: 0;
+}
+
+div.maptych figure:first-of-type {
+    margin-right: 5px;
+}
+
+.svg-map img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    div.maptych figure:first-of-type {
+        margin-right: 2%;
+    }
+}
+section.leaderboard h2 {
+    font-family: "Benton Gothic", Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.display_none {
+  display:none !important;
+}
+.display_block {
+  display:table-row !important;
+}
+.lower {
+  text-transform: none !important;
+}
+
+.table-container {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table--leaderboard {
+  max-width: none;
+  width: 100%;
+}
+
+.table--leaderboard thead th {
+  font-weight: normal;
+  font-family: 'Benton Gothic Bold',Arial,sans-serif;
+}
+
+.candidate_row {
+  width: 100%;
+}
+
+tr.candidate_row:nth-of-type(n+6) {
+    display: none;
+}
+.candidate_rank {
+  font-size: 26px;
+  vertical-align: middle!important;
+  font-family: 'Benton Gothic Bold',Arial,sans-serif;
+  width: 5%;
+  padding-right: 0;
+}
+.candidate_photo {
+  /* width: 1%; */
+}
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #5786B6;
+}
+
+.big_number {
+  font-size:16px;
+  vertical-align: middle !important;
+  font-family: 'Benton Gothic Bold',Arial,sans-serif;
+  width:10%;
+}
+
+.candidate_name {
+  font-size: 16px;
+  vertical-align: middle !important;
+  line-height: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .thumb {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+  }
+
+  .big_number {
+    font-size: 18px;
+  }
+
+  .candidate_name {
+    font-size: 17px;
+  }
+}
+
+.candidate_description {
+  font-size: 12px;
+  line-height: 80%;
+}
+.total_chart {
+  width: 40%;
+  vertical-align: middle !important;
+}
+.chart_container {
+  height: 20px;
+  border: none;
+  float: left;
+  background: #51723f;
+}
+.chart_container.gop {
+    background: #d94f54;
+}
+.chart_container.dem {
+    background: #5789b8;
+}
+
+.align_right {
+  text-align: right !important;
+}
+
+
+/*ie leader board styles*/
+
+.ie_rank {
+  font-size: 26px;
+  /*vertical-align: middle!important;*/
+  font-family: 'Benton Gothic Bold',Arial,sans-serif;
+  width: 5%;
+  padding-right: 0;
+}
+
+.ie_comm_name {
+  font-family: 'Benton Gothic Bold',Arial,sans-serif;
+  font-size: 16px;
+}
+
+.ie_stances {
+  font-style: italic;
+}
+
+.ie_description {
+  /*font-size: 12px;*/
+}
+
+
+@media(max-width: 768px) {
+  td.candidate_name {
+    min-width: auto;
+  }
+}
+
+
+@media(max-width: 480px){
+    .donor_row p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+</style>
+
+
+    
+<script type="text/javascript">
+    ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
+        // Page naming convention:
+        //  <site-slug>:<app-slug>:<path>:<datadesk-slug>-<page-slug>:<content-type>.
+        // Example:
+        //  lat:projects.latimes.com:local:data-pat-tillman:individualarticle.
+        //  (Don't miss the period at the end.)
+        pageName: 'lat:local:2020-democrat-la-county-donor-maps:individualarticle.',
+        channel: 'local', // Path
+        server: 'www.latimes.com', // Full domain
+        hier1: 'latimes:local', // Path (with latimes prefix)
+        hier2: 'local', // Path (again)
+        prop1: 'D=pageName',
+        prop2: 'local', // Path (again!)
+        prop38: 'individualarticle', // Content type
+        eVar1: window.location.href, // This URL
+        eVar2: document.referrer, // The referring URL
+        prop44: '2020-democrat-la-county-donor-maps',
+        prop57: 'D=c38',
+        prop59: 'Anthony Pesce, Maloy Moore, Iris Lee and Ryan Murphy',
+        eVar20: 'latimes',
+        eVar21: 'D=c38',
+        eVar34: 'D=ch',
+        eVar35: 'D=pageName',
+        events: '',
+        prop64: "08-07-2019 00:00"
+    });
+</script>
+
+    
+<script async src="https://nexus.ensighten.com/caltimes/lat_datadesk_prod/Bootstrap.js"></script>
+
+
+    <!-- JAVASCRIPT -->
+    
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/jquery-3.4.1/jquery-3.4.1.min.js" defer></script>
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/subscriber-check-1.3.22.min.js" defer></script>
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/ngux-ads-2.4.3.min.js" defer></script>
+    
+    
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js'></script>
+
+
+    
+</head>
+<body data-ad-slug="2020-democrat-la-county-donor-maps" data-ad-path="4011/trb.latimes/news/datadesk" data-ad-ptype="s" data-ad-iframe-url="/projects/static/ngux-tophat-ad-iframe.html" >
+    <!-- NAV -->
+    
+    <nav title="Navigation">
+        <div id="tophat-container">
+    <div id="tophat">
+        
+            
+                <a id="tophat-logo" href="//www.latimes.com/"></a>
+            
+            
+            <div class="pull-right">
+                <a href="http://ad.latimes.com/land-subscribe-evergreen/editorialnav.html?int=lat_digitaladshouse_4-weeks-99_acquisition-subscriber_ngux_button_editorial_______nav-subscribe-button">
+                  <div class="subscribe-button">Subscribe
+                     <span id="price">4 weeks for 99¢</span>
+                  </div>
+                </a>
+            </div>
+            
+        
+    </div>
+</div>
+
+    </nav>
+    
+
+    
+    <header class="center">
+        
+
+<div class="shares">
+  <a class="shares__item" href="https://www.facebook.com/dialog/share?app_id=119932621434123&href=https://www.latimes.com/projects/2020-democrat-la-county-donor-maps/"><i class="LATFacebook" data-socialshare-type="facebook" aria-label="Share this page on Facebook"></i></a>
+  <a class="shares__item" href="https://twitter.com/intent/tweet?url=https://www.latimes.com/projects/2020-democrat-la-county-donor-maps/&text=Which%20Democrat%20is%20your%20L.A.%20block%20backing%3F" aria-label="Share this page on Twitter"><i class="LATTwitter" data-socialshare-type="twitter" ></i></a>
+  <a class="shares__item" href="mailto:?subject=Which%20Democrat%20is%20your%20L.A.%20block%20backing%3F - Los Angeles Times&body=https://www.latimes.com/projects/2020-democrat-la-county-donor-maps/" aria-label="Share this page in an email"><i class="LATEmail" data-socialshare-type="email"></i></a>
+</div>
+
+        <h1>Which Democrat is your L.A. block backing?</h1>
+        <p class="byline">
+            By <span class="author"><a href='https://www.latimes.com/la-bio-anthony-pesce-staff.html'>Anthony Pesce</a>, <a href='https://www.latimes.com/la-bio-maloy-moore-staff.html'>Maloy Moore</a>, <a href='https://www.latimes.com/la-bio-iris-lee-staff.html'>Iris Lee</a> and <a href='https://www.latimes.com/la-bio-ryan-murphy-staff.html'>Ryan Murphy</a></span>
+        </p>
+        <p class="dateline">
+            <time datetime="2019-08-07" pubdate>
+                Aug. 7, 2019
+            </time>
+        </p>
+    </header>
+    <article class="big-build">
+        <div class="container">
+            <p>Los Angeles County donors have given more than $13 million to the field of Democratic challengers in 2020. Here&#39;s what we know.</p>
+        </div>
+
+        <div class="container">
+           
+<section name="leaderboard" class="leaderboard">
+    <h2>Who&#39;s on top?</h2>
+    <p>Sen. Kamala Harris leads all Democrats in the race for L.A. County cash. Large hauls from fundraisers on the wealthy Westside have helped top her rivals here, including Sen. Bernie Sanders, who holds <a href="https://www.latimes.com/projects/2020-democrat-campaign-donors-maps/">the nationwide lead</a> thanks to an army of small donors spread across America.</p>
+    <div class="table-container">
+      <table class="table table--leaderboard">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th colspan=2 style="text-align:right">Total from L.A. County</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Kamala Harris"
+                     class="thumb img-circle"
+                     style="background-color: #e6ab02;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/harris.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Kamala Harris<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from California</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:100%"></div>
+              </td>
+              <td class="big_number align_right">
+                $3,760,082
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Pete Buttigieg"
+                     class="thumb img-circle"
+                     style="background-color: #66a61e;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/buttigieg.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Pete Buttigieg<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Mayor of South Bend, Ind.</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:60%"></div>
+              </td>
+              <td class="big_number align_right">
+                2,268,522
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Bernie Sanders"
+                     class="thumb img-circle"
+                     style="background-color: #1b9e77;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/sanders.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Bernie Sanders<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from Vermont</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:48%"></div>
+              </td>
+              <td class="big_number align_right">
+                1,810,407
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Joe Biden"
+                     class="thumb img-circle"
+                     style="background-color: #7570b3;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/biden.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Joe Biden<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Former vice president</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:36%"></div>
+              </td>
+              <td class="big_number align_right">
+                1,361,699
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Elizabeth Warren"
+                     class="thumb img-circle"
+                     style="background-color: #d95f02;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/warren.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Elizabeth Warren<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from Massachusetts</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:29%"></div>
+              </td>
+              <td class="big_number align_right">
+                1,075,398
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Cory Booker"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/booker.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Cory Booker<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from New Jersey</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:15%"></div>
+              </td>
+              <td class="big_number align_right">
+                548,428
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Beto O&#39;Rourke"
+                     class="thumb img-circle"
+                     style="background-color: #e7298a;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/orourke.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Beto O&#39;Rourke<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Former congressman from Texas</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:10%"></div>
+              </td>
+              <td class="big_number align_right">
+                384,739
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Kirsten Gillibrand"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/gillibrand.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Kirsten Gillibrand<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from New York</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:9%"></div>
+              </td>
+              <td class="big_number align_right">
+                337,788
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Amy Klobuchar"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/klobuchar.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Amy Klobuchar<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from Minnesota</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:8%"></div>
+              </td>
+              <td class="big_number align_right">
+                306,424
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Julian Castro"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/castro.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Julian Castro<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Former Housing secretary</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:7%"></div>
+              </td>
+              <td class="big_number align_right">
+                272,840
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Michael Bennet"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/bennet.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Michael Bennet<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Senator from Colorado</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:7%"></div>
+              </td>
+              <td class="big_number align_right">
+                257,180
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Andrew Yang"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/yang.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Andrew Yang<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Founder of Venture for America</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:7%"></div>
+              </td>
+              <td class="big_number align_right">
+                254,225
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Tulsi Gabbard"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/gabbard.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Tulsi Gabbard<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Congresswoman from Hawaii</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:6%"></div>
+              </td>
+              <td class="big_number align_right">
+                210,867
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Marianne Williamson"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/williamson.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Marianne Williamson<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Author of self-help and spiritual books</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:5%"></div>
+              </td>
+              <td class="big_number align_right">
+                197,384
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Steve Bullock"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/bullock.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Steve Bullock<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Governor of Montana</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:5%"></div>
+              </td>
+              <td class="big_number align_right">
+                178,654
+              </td>
+          </tr>
+        
+          <tr class="candidate_row">
+              <td class="candidate_photo">
+                <img alt="Jay Inslee"
+                     class="thumb img-circle"
+                     style="background-color: #216db9;"
+                     src="/projects/2020-democrat-la-county-donor-maps/static/img/inslee.png?foo=333">
+              </td>
+              <td class="candidate_name">
+                Jay Inslee<br />
+                <span class="candidate_description hidden-tablet hidden-phone">Governor of Washington</span>
+              </td>
+              <td class="total_chart hidden-phone">
+                <div class="chart_container" style="width:3%"></div>
+              </td>
+              <td class="big_number align_right">
+                127,599
+              </td>
+          </tr>
+        
+        </tbody>
+    </table>
+    <button class="btn table_toggle_c" id="candidate_more">
+      <span class="btn_text">+ Show more</span>
+      <span class="btn_text display_none">- Show less</span>
+    </button>
+    </div>
+</section>
+
+        </div>
+        <section class="map">
+    <div class="container map-control-section">
+    <h2>Mapping every dollar</h2>
+    <p>More than 250,000 donations have poured in from L.A. The result is the most detailed look yet at who Angelenos support. Search an address to see who your area is funding.</p>
+    <div id='geocoder' class='geocoder align-content'></div>
+    </div>
+    <div id="app" class="map-container">
+      <div id='console' hidden>
+        <div id='box'></div>
+        <div id='poptable-holder'>
+          <table id='poptable'></table>
+        </div>
+      </div>
+      <div id="legend-box">
+        <div id="legend-wrapper">
+          <div class='legend-grid'><span></span></div>
+          <div class='legend-grid'><span></span></div>
+          <div class='legend-grid'><span></span></div>
+          <div class='legend-grid'><span></span></div>
+          <div class='legend-grid'><span></span></div>
+          <div class='legend-grid'><span></span></div>
+        </div>
+      </div>
+    </div>
+</section>
+
+        <div class="container">
+            <section name="candidates" class="candidates">
+    <h2>Here's the breakdown</h2>
+    <p><p>We mapped the donor pool for each candidate. This is what they show. </p></p>
+    
+    <section class="candidate" data-slug="harris">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Kamala Harris" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/harris.png?rev=13" style="background-color: #e6ab02">
+                <noscript>
+                        <img alt="Kamala Harris" src="/projects/2020-democrat-la-county-donor-maps/static/img/harris.png?rev=13" style="background-color: #e6ab02">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Kamala Harris</h2>
+                <em>Senator from California</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>The wealthy Westside, which Harris now calls home, has put millions into her career, which started in the San Francisco Bay Area.</p>
+        </div>
+        <div class="analysis">
+            <p>The U.S. senator's presidential bid has netted large hauls from elite neighborhoods like Brentwood, Beverly Hills and Santa Monica. She's also pulled in tens of thousands of dollars from historically black neighborhoods like Leimert Park and Ladera Heights.</p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Kamala Harris's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/harris-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/harris-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/harris-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/harris-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Kamala Harris's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/harris-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="buttigieg">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Pete Buttigieg" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/buttigieg.png?rev=13" style="background-color: #66a61e">
+                <noscript>
+                        <img alt="Pete Buttigieg" src="/projects/2020-democrat-la-county-donor-maps/static/img/buttigieg.png?rev=13" style="background-color: #66a61e">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Pete Buttigieg</h2>
+                <em>Mayor of South Bend, Ind.</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Buttigieg, the most successful LGBTQ candidate for president, has raised more than $130,000 in the gay mecca of West Hollywood &mdash; a sum greater than any competitor.</p>
+        </div>
+        <div class="analysis">
+            <p>While some rivals have broad support across the county, Buttigieg's donors are concentrated in neighborhoods surrounding West Hollywood like Beverly Grove, Hollywood, and Hollywood Hills West. Even so, he ranks second among Democrats in Los Angeles County so far.</p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Pete Buttigieg's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/buttigieg-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/buttigieg-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/buttigieg-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/buttigieg-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Pete Buttigieg's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/buttigieg-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="sanders">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Bernie Sanders" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/sanders.png?rev=13" style="background-color: #1b9e77">
+                <noscript>
+                        <img alt="Bernie Sanders" src="/projects/2020-democrat-la-county-donor-maps/static/img/sanders.png?rev=13" style="background-color: #1b9e77">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Bernie Sanders</h2>
+                <em>Senator from Vermont</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Thanks to his massive base of small-dollar donors, Sanders is less reliant on big checks from the wealthy Westside. His support stretches all across Los Angeles County and he leads other candidates in many of the county's eastern areas.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Bernie Sanders's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/sanders-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/sanders-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/sanders-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/sanders-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Bernie Sanders's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/sanders-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="biden">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Joe Biden" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/biden.png?rev=13" style="background-color: #7570b3">
+                <noscript>
+                        <img alt="Joe Biden" src="/projects/2020-democrat-la-county-donor-maps/static/img/biden.png?rev=13" style="background-color: #7570b3">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Joe Biden</h2>
+                <em>Former vice president</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>While Biden trails the front-runners, he has still raised hundreds of thousands of dollars from some of the same wealthy regions.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Joe Biden's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/biden-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/biden-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/biden-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/biden-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Joe Biden's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/biden-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="warren">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Elizabeth Warren" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/warren.png?rev=13" style="background-color: #d95f02">
+                <noscript>
+                        <img alt="Elizabeth Warren" src="/projects/2020-democrat-la-county-donor-maps/static/img/warren.png?rev=13" style="background-color: #d95f02">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Elizabeth Warren</h2>
+                <em>Senator from Massachusetts</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Warren, who has intentionally eschewed traditional big-dollar fundraising events, is dependent on small-dollar donors. She doesn't have many areas where she stands out, but she does well all over.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Elizabeth Warren's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/warren-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/warren-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/warren-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/warren-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Elizabeth Warren's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/warren-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="booker">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Cory Booker" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/booker.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Cory Booker" src="/projects/2020-democrat-la-county-donor-maps/static/img/booker.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Cory Booker</h2>
+                <em>Senator from New Jersey</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Though he trails the first tier of fundraisers, the New Jersey senator <a href="https://www.latimes.com/politics/story/2019-07-17/hollywood-money-democratic-fundraisers" target="_blank">received support</a> from some of the county's most generous donors at a recent Santa Monica event co-hosted by members of the Obama administration and his girlfriend, actress Rosario Dawson.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Cory Booker's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/booker-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/booker-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/booker-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/booker-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Cory Booker's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/booker-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="orourke">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Beto O&#39;Rourke" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/orourke.png?rev=13" style="background-color: #e7298a">
+                <noscript>
+                        <img alt="Beto O&#39;Rourke" src="/projects/2020-democrat-la-county-donor-maps/static/img/orourke.png?rev=13" style="background-color: #e7298a">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Beto O&#39;Rourke</h2>
+                <em>Former congressman from Texas</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Despite running one of the most successful fundraising campaigns in congressional history, O'Rourke has struggled to compete with his Democratic rivals here in Los Angeles.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Beto O&#39;Rourke's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/orourke-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/orourke-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/orourke-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/orourke-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Beto O&#39;Rourke's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/orourke-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="gillibrand">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Kirsten Gillibrand" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/gillibrand.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Kirsten Gillibrand" src="/projects/2020-democrat-la-county-donor-maps/static/img/gillibrand.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Kirsten Gillibrand</h2>
+                <em>Senator from New York</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Gillibrand, a champion of the #MeToo movement that shook Hollywood's power elite, remains stuck in the middle of the pack.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Kirsten Gillibrand's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/gillibrand-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/gillibrand-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/gillibrand-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/gillibrand-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Kirsten Gillibrand's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/gillibrand-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="klobuchar">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Amy Klobuchar" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/klobuchar.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Amy Klobuchar" src="/projects/2020-democrat-la-county-donor-maps/static/img/klobuchar.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Amy Klobuchar</h2>
+                <em>Senator from Minnesota</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>The Midwesterner, one of a record number of women running in 2020, has also failed to break through.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Amy Klobuchar's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/klobuchar-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/klobuchar-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/klobuchar-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/klobuchar-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Amy Klobuchar's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/klobuchar-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="castro">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Julian Castro" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/castro.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Julian Castro" src="/projects/2020-democrat-la-county-donor-maps/static/img/castro.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Julian Castro</h2>
+                <em>Former Housing secretary</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>This member of president Obama's cabinet has relied chiefly on donations from the Westside precincts that bolstered Obama's two runs to the White House.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Julian Castro's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/castro-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/castro-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/castro-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/castro-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Julian Castro's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/castro-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="bennet">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Michael Bennet" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/bennet.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Michael Bennet" src="/projects/2020-democrat-la-county-donor-maps/static/img/bennet.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Michael Bennet</h2>
+                <em>Senator from Colorado</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>The Coloradan assembled a donor network during a stint as head of the Democratic Senatorial Campaign Committee, which has yet to pay dividends.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Michael Bennet's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/bennet-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/bennet-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/bennet-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/bennet-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Michael Bennet's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/bennet-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="yang">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Andrew Yang" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/yang.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Andrew Yang" src="/projects/2020-democrat-la-county-donor-maps/static/img/yang.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Andrew Yang</h2>
+                <em>Founder of Venture for America</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>The Silicon Valley entrepreneur's strongest support came from the San Gabriel Valley, home to many fellow Asian Americans.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Andrew Yang's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/yang-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/yang-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/yang-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/yang-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Andrew Yang's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/yang-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="gabbard">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Tulsi Gabbard" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/gabbard.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Tulsi Gabbard" src="/projects/2020-democrat-la-county-donor-maps/static/img/gabbard.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Tulsi Gabbard</h2>
+                <em>Congresswoman from Hawaii</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Gabbard, a practicing Hindu, has garnered strong support from <a href="https://www.latimes.com/politics/story/2019-07-21/2020-indian-american-donors-kamala-harris-tulsi-gabbard-cory-booker-trump-biden" target="_blank">Indian Americans in Los Angeles and across America</a>.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Tulsi Gabbard's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/gabbard-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/gabbard-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/gabbard-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/gabbard-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Tulsi Gabbard's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/gabbard-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="williamson">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Marianne Williamson" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/williamson.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Marianne Williamson" src="/projects/2020-democrat-la-county-donor-maps/static/img/williamson.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Marianne Williamson</h2>
+                <em>Author of self-help and spiritual books</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Despite being a longtime Los Angeles resident who once sought to represent the Westside in Congress, Williamson has struggled to raise money at home.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Marianne Williamson's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/williamson-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/williamson-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/williamson-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/williamson-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Marianne Williamson's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/williamson-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="bullock">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Steve Bullock" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/bullock.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Steve Bullock" src="/projects/2020-democrat-la-county-donor-maps/static/img/bullock.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Steve Bullock</h2>
+                <em>Governor of Montana</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Having only <a href='https://www.latimes.com/politics/la-na-pol-montana-democratic-governor-steve-bullock-announces-presidential-bid-20190514-story.html' target='_blank'>joined the race in May</a>, the Montana governor has not had much time to tap into the county's donor pool.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Steve Bullock's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/bullock-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/bullock-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/bullock-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/bullock-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Steve Bullock's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/bullock-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    <section class="candidate" data-slug="inslee">
+        <div class="head">
+            <div class="img-wrapper">
+                <img class="lazy" alt="Jay Inslee" data-src="/projects/2020-democrat-la-county-donor-maps/static/img/inslee.png?rev=13" style="background-color: #216db9">
+                <noscript>
+                        <img alt="Jay Inslee" src="/projects/2020-democrat-la-county-donor-maps/static/img/inslee.png?rev=13" style="background-color: #216db9">
+                    </noscript>
+            </div>
+            <div class="txt-wrapper">
+                <h2>Jay Inslee</h2>
+                <em>Governor of Washington</em>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="led">
+            <p>Despite his emphasis on <a href="https://www.latimes.com/politics/la-na-pol-2020-jay-inslee-presidential-campaign-climate-change-20190617-story.html" target="_blank">climate change</a>, a topic dear to California environmentalists, Inslee has struggled to raise money here in Los Angeles.</p>
+        </div>
+        <div class="analysis">
+            <p></p>
+        </div>
+        <div class="maptych">
+            <figure>
+                <img
+                  class="lazy-image lazy"
+                  alt="A map of Jay Inslee's Los Angeles County donors"
+                  src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/inslee-320.png 320w"
+                  data-srcset="/projects/2020-democrat-la-county-donor-maps/static/img/maps/inslee-320.png 320w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/inslee-640.png 640w, /projects/2020-democrat-la-county-donor-maps/static/img/maps/inslee-960.png 960w"
+                />
+                <noscript>
+                    <img
+                    alt="A map of Jay Inslee's Los Angeles County donors"
+                    src="/projects/2020-democrat-la-county-donor-maps/static/img/maps/inslee-640.png 640w"
+                    />
+                </noscript>
+              </figure>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+</section>
+
+            <section name="credits">
+                <p class="credits">Note: This analysis only includes candidates who have raised more than $100,000 in Los Angeles County</p>
+                <p class="credits">Sources: Federal Election Commission, Times analysis</p>
+                <p class="credits">Additional work by Ben Welsh</p>
+            </section>
+        </div>
+    </article>
+
+
+    
+        
+        <!-- Google Analytics code -->
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-65208330-4', 'latimes.com');
+              ga('send', 'pageview');
+        </script>
+        
+    
+
+    
+    
+    <footer title="Footer">
+        <nav id="footer-container">
+    <div id="footer">
+        
+            
+                <div id="tos">
+                    <a href="//www.latimes.com/terms">Terms of Service</a> |
+                    <a href="//www.latimes.com/privacy">Privacy<span class="hidden-phone"> Policy</span></a> |
+                    <a href="//www.latimes.com/lat-about-our-ads,0,3875412.htmlstory"><span class="hidden-phone">About Our </span>Ads</a> |
+                    <a href="//www.latimes.com/services/site/la-reprint-request-splash,0,6731163.htmlstory">&copy;</a> |
+                    <a href="//www.latimes.com/about/"><span class="hidden-phone">About This Site</span></a>
+                </div>
+            
+        
+    </div>
+</nav>
+
+    </footer>
+    
+    <script type="text/javascript" src="https://ssor.tribdss.com/reg/tribune/lanews-static.min.js" defer async></script>
+    
+    <script type="text/javascript" src="https://dss.platform.californiatimes.com/meter/latspot.min.js" defer async></script>
+    
+
+
+    
+    <script defer src="/projects/2020-democrat-la-county-donor-maps/static/scripts/runtime.b9131774.js"></script>
+<script defer src="/projects/2020-democrat-la-county-donor-maps/static/scripts/2.3703f1a1.chunk.js"></script>
+<script defer src="/projects/2020-democrat-la-county-donor-maps/static/scripts/app.848d50d1.chunk.js"></script>
+
+
+    
+    <script>
+        (function() {
+            /** CONFIGURATION START **/
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+
+            _sf_async_config.uid = 3908;
+            _sf_async_config.domain = 'latimes.com';
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.useCanonicalDomain = true;
+            _sf_async_config.sections = 'bigbuilder';
+            _sf_async_config.authors = 'Anthony Pesce, Maloy Moore, Iris Lee and Ryan Murphy';
+            /** CONFIGURATION END **/
+            function loadChartbeat() {
+                var e = document.createElement('script');
+                var n = document.getElementsByTagName('script')[0];
+                e.type = 'text/javascript';
+                e.async = true;
+                e.src = '//static.chartbeat.com/js/chartbeat.js';
+                n.parentNode.insertBefore(e, n);
+            }
+            loadChartbeat();
+         })();
+    </script>
+    
+</body>
+</html>

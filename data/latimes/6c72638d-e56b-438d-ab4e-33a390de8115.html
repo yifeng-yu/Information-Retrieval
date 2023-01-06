@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    
+    <!--
+                                              _..
+      ____     _   _____   _     ___..-"""-.  `)^|   .-"""-..___    ____   _____  ____   _  __
+     |  _ \   / \ |_   _| / \   `-...___ `=.`-.`  \-`.=` ___...-`  |  _ \ | ____|/ ___| | |/ /
+     | | | | / _ \  | |  / _ \          `\  ` ##### `  /`          | | | ||  _|  \___ \ | ` /
+     | |_| |/ ___ \ | | / ___ \           `--;|||||;--`            | |_| || |___  ___) || . \
+     |____//_/   \_\|_|/_/   \_\             /\|||/\               |____/ |_____||____/ |_|\_\
+    _______________________________________ ( /;-;\ ) _________________________________________
+                                             `-...-`
+    -->
+    <!-- Created on Aug. 8, 2019, using v1.3.28 of the Los Angeles Times Data Desk's base templates -->
+    
+    
+    <!-- Good with data? -->
+    <!-- Tired of grinding on the same old apps? -->
+    <!-- Want to use your skills in defense of truth, justice and the American way? -->
+    <!-- Email datadesk@latimes.com and let us know you're out there. -->
+    
+
+    
+    <link href="https://nexus.ensighten.com" rel="preconnect">
+    <link href="https://static.chartbeat.com" rel="preconnect">
+    <link href="https://ping.chartbeat.com" rel="preconnect">
+    <link href="https://www.tribdss.com" rel="preconnect">
+    <link href="https://ssor.tribdss.com" rel="preconnect">
+    <link href="https://latimes.signon.trb.com" rel="preconnect">
+    <link href="https://d1qqc1e9kvmdh8.cloudfront.net" rel="preconnect" crossorigin>
+    
+
+    <!-- METADATA -->
+    <title>Where can you afford to rent in California? - Los Angeles Times</title>
+    
+    <meta charset="utf-8" />
+    <meta name="description" content="Economists say you shouldn&#8217;t spend more than 30% of earnings on rental costs. Use this tool to see where you can afford to live." />
+    <meta name="keywords" content="data desk, los angeles times, latimes, l.a. times" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/favicon-32x32.ico" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="https://d1qqc1e9kvmdh8.cloudfront.net/img/favicon-16x16.ico" sizes="16x16">
+    
+    
+        
+        <link rel="canonical" href="https://www.latimes.com/projects/california-rental-calculator-map/">
+    
+
+    
+    
+    <meta property="og:title" content="Where can you afford to rent in California?"/>
+    
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://www.latimes.com/projects/california-rental-calculator-map/" />
+    <meta property="og:image" content="http://www.trbimg.com/img-5d67479b/turbine/la-rent-map-19-20190828/"/>
+    <meta property="og:site_name" content="www.latimes.com"/>
+    <meta property="og:description" content="Economists say you shouldn't spend more than 30% of earnings on rental costs. Use this tool to see where you can afford to live."/>
+    <meta property="fb:admins" content="1257725335"/>
+    <meta property="fb:app_id" content="119932621434123" />
+    <meta property="twitter:site" content="@latimes" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.latimes.com/projects/california-rental-calculator-map/" />
+    
+    <meta property="twitter:title" content="Where can you afford to rent in California?" />
+    
+    <meta property="twitter:description" content="Economists say you shouldn't spend more than 30% of earnings on rental costs. Use this tool to see where you can afford to live." />
+    <meta property="twitter:image" content="http://www.trbimg.com/img-5d67479b/turbine/la-rent-map-19-20190828/" />
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      
+      "headline": "Where can you afford to rent in California?",
+      
+      "image": {
+          "@type": "ImageObject",
+          "contentUrl": "http://www.trbimg.com/img-5d67479b/turbine/la-rent-map-19-20190828/",
+          "url": "http://www.trbimg.com/img-5d67479b/turbine/la-rent-map-19-20190828/",
+          "representativeOfPage": true
+      },
+      "datePublished": "2019-08-29",
+      "description": "Economists say you shouldn't spend more than 30% of earnings on rental costs. Use this tool to see where you can afford to live.",
+      "publisher": {
+          "@type": "Organization",
+          "name": "Los Angeles Times",
+          "url": "http://www.latimes.com",
+          "location": {
+              "@type": "Place",
+              "name": "Los Angeles"
+          },
+          "logo": {
+              "@type": "ImageObject",
+              "contentUrl": "http://cookbook.latimes.com/img/ngux-tophat/logos/lat_logo_730_black.png",
+              "url": "http://cookbook.latimes.com/img/ngux-tophat/logos/lat_logo_730_black.png"
+          }
+      },
+      "author": {
+          "@type": "Person",
+          "name": "Ryan Murphy and Priya Krishnakumar"
+      }
+    }
+    </script>
+    
+
+    
+
+    <!-- CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-1.3.28.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://d1qqc1e9kvmdh8.cloudfront.net/css/ngux-tophat-responsive-1.3.28.min.css" />
+    
+    
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css' />
+    <style type="text/css">.map-container {
+  width: 100%;
+  position: relative;
+  height: 600px;
+}
+
+@media screen and (min-width: 48em) and (min-height: 30em) {
+  .map-container {
+    height: auto;
+  }
+}
+
+.map {
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+  height: 36px !important;
+  margin-bottom: 0 !important;
+  padding: 6px 35px !important;
+}
+/*legend css*/
+.legend-colors-holder, .legend-text-holder {
+  display: flex;
+}
+
+.legend-text {
+  font-size: .875rem;
+  font-weight: 700;
+  margin-bottom: .625rem;
+}
+
+.legend-holder {
+  position: absolute;
+  z-index: 1000;
+  bottom: 35px;
+  left: 10px;
+  font-size: 16px;
+  padding: .625rem;
+  background-color: white;
+  font-family: 'Benton Gothic';
+}
+
+.legend-item {
+  flex: 0 0 20%;
+  font-size: 0.75rem;
+  font-family: 'Benton Gothic';
+  max-width: 20%;
+  margin: 0;
+}
+
+.legend-item--cell {
+  height: 20px;
+}
+
+.legend-item--text {
+  margin-right: -0.2em;
+  
+}
+
+h1 {
+  font-family: 'KisFBDisplay', Georgia, serif;
+  /*font-size: 51px;*/
+  /*line-height: 63px;*/
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  margin: 19px 0px;
+}
+.new-tophat {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+.support, article.big-build .container .support {
+    margin: 20px auto;
+    line-height: 1.5;
+    padding: 1.75em 1.5em 1.6em 1.5em;
+    background: #f4f4f4;
+    -webkit-box-shadow: 2px 2px 7px 2px #E0E0E0;
+    -moz-box-shadow: 2px 2px 7px 2px #E0E0E0;
+    box-shadow: 2px 2px 7px 2px #E0E0E0;
+}
+
+
+.tophat-logo {
+  float: none !important;
+  margin: 0.625rem 0 !important;
+}
+
+.tophat-logo img {
+  height: 20px;
+  vertical-align: bottom;
+}
+.bold {
+  font-weight: bold;
+}
+p.robotext {
+  font-family: 'Benton Gothic';
+  text-align: left !important;
+}
+p.robotext_small {
+  margin-top: -20px;
+  text-align: left;
+  font-size: 15px;
+  font-family: 'Benton Gothic';
+  color: #666;
+}
+section:first-of-type {
+  margin-top: 0px;
+}
+.shares {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.shares__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a.shares__item {
+  color: #282828;
+}
+
+a.shares__item:hover {
+  color: #666666;
+}
+header.center p.description {
+  text-align: left;
+  max-width: 650px;
+  margin: 10px auto;
+}
+.container {
+  padding-bottom: 60px;
+}
+.graphic {
+}
+
+@media screen and (min-width: 48em) and (min-height: 30em) {
+  .graphic {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+}
+
+.graphic__cell {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+h3 {
+  font-weight: normal;
+  font-family: 'Benton Gothic';
+  text-align: left !important;
+}
+
+p.salary_example {
+  text-align: left;
+  font-family: 'Benton Gothic';
+  font-size: 16px;
+  margin: 12px 0px;
+  color: #666;
+}
+span#monthlyrent {
+  font-weight: bold;
+  /*font-size: 32px;*/
+}
+output {
+    font-family: 'Benton Gothic';
+    white-space: nowrap;
+    margin-left: 5px;
+}
+output::before {
+  content: '$';
+}
+output::after {
+  content: ' / month';
+}
+.calculator p#percent-text {
+  /*text-align: center;*/
+  font-size: 38px;
+  /* border: 1px inset #ccc; */
+  font-family: 'Benton Gothic';
+  display: block;
+  /* margin-top: 20px; */
+  margin: 0px auto;
+}
+#monthlypercent {
+  font-weight: bold;
+}
+
+.intro-input {
+  text-align: center;
+  margin: 0px auto;
+  padding: 0px 10px;
+  max-width: 550px;
+}
+
+.intro-input input[type='text'] {
+  background-color: #fff;
+  border: 0px;
+  border-bottom: 1px solid #666;
+  border-radius: 0px;
+  font-size: 19px;
+      width: 100px;
+  font-family: 'Benton Gothic';
+  font-weight: bold;
+  vertical-align: baseline;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+/*slider stuff*/
+.input-label {
+  font-size: 16px;
+  font-family: 'Benton Gothic', Arial, sans-serif;
+  margin: 0px 5px;
+  color: #666;
+  display: inline-block;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 76%;
+  max-width: 350px;
+  background: #ccc;
+  height: 7px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type='range']:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+input[type='range']::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #ffffff;
+  height: 22px;
+  width: 22px;
+  border-radius: 12px;
+  background: #91629a;
+  cursor: pointer;
+  margin-top: 0px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+  border: 2px solid #ffffff;
+  height: 22px;
+  width: 22px;
+  border-radius: 18px;
+  background: #91629a;
+  cursor: pointer;
+}
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+  border: 2px solid #ffffff;
+  height: 22px;
+  width: 22px;
+  border-radius: 12px;
+  background: #91629a;
+  cursor: pointer;
+}
+.affordable-bar {
+  /*margin: 0px auto;*/
+  text-align: center;
+  clear: both;
+  overflow: hidden;
+}
+.affordable-block {
+  display: block;
+}
+#affordable_bracket {
+  /*width: 80%;*/
+  height: 6px;
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+
+.map-tooltip {
+  background-color: white;
+  padding: 0.25rem;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1070;
+}
+
+.map-tooltip__zip {
+  font-family: 'Benton Gothic', Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.map-tooltip__total {
+  font-family: 'Benton Gothic', Arial, sans-serif;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+.graphic .affordable-bar p {
+  font-size: 14px;
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+  font-family: 'Benton Gothic', Arial, sans-serif;
+}
+#slider_holder {
+  display: flex;
+  align-items: center;
+}
+/*how is this already like 200 lines*/
+.small_text {
+  border: 1px solid #91629a;
+  border-radius: 3px;
+  padding: 2px 6px;
+  /* background-color: white; */
+  font-size: 14px;
+  color: #91629a;
+}
+.small_text:hover {
+  cursor: pointer;
+}
+.small_text.selected:hover {
+  cursor: auto;
+}
+.small_text.selected {
+  background-color: #91629a;
+  color: #fff;
+}
+.mlt_lite h3 {
+  margin-bottom: 20px;
+}
+.mlt_lite {
+  width: 100%;
+  max-width: 550px;
+  margin: 50px auto 20px auto;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.credits--desktop {
+  display: none;
+}
+
+.credits--mobile {
+  display: block;
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+
+@media screen and (min-width: 48em) and (min-height: 30em) {
+  .credits--desktop {
+    display: block;
+  }
+
+  .credits--mobile {
+    display: none;
+  }
+}
+@media (max-width: 480px){
+h1 {
+    font-size: 37px;
+    line-height: 41px;
+}
+p{
+  font-size: 16px;
+}
+.intro-input input[type='text'] {
+    font-size: 16px;
+    width: 66px;
+  }
+  #slider_holder {
+    margin-left: 15px;
+  }
+  .affordable-block {
+    display: block;
+    margin-left: 15px;
+}
+  output {
+    font-family: 'Benton Gothic';
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mapboxgl-ctrl-geocoder--icon-search {
+      top: 6px;
+  }
+}</style>
+
+
+    
+<script type="text/javascript">
+    ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
+        // Page naming convention:
+        //  <site-slug>:<app-slug>:<path>:<datadesk-slug>-<page-slug>:<content-type>.
+        // Example:
+        //  lat:projects.latimes.com:local:data-pat-tillman:individualarticle.
+        //  (Don't miss the period at the end.)
+        pageName: 'lat:local:california-rental-calculator-map:individualarticle.',
+        channel: 'local', // Path
+        server: 'www.latimes.com', // Full domain
+        hier1: 'latimes:local', // Path (with latimes prefix)
+        hier2: 'local', // Path (again)
+        prop1: 'D=pageName',
+        prop2: 'local', // Path (again!)
+        prop38: 'individualarticle', // Content type
+        eVar1: window.location.href, // This URL
+        eVar2: document.referrer, // The referring URL
+        prop44: 'california-rental-calculator-map',
+        prop57: 'D=c38',
+        prop59: 'Ryan Murphy and Priya Krishnakumar',
+        eVar20: 'latimes',
+        eVar21: 'D=c38',
+        eVar34: 'D=ch',
+        eVar35: 'D=pageName',
+        events: '',
+        prop64: "08-29-2019 05:30"
+    });
+</script>
+
+
+    
+<script async src="https://nexus.ensighten.com/caltimes/lat_datadesk_prod/Bootstrap.js"></script>
+
+
+    <!-- JAVASCRIPT -->
+    
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/jquery-3.4.1/jquery-3.4.1.min.js" defer></script>
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/subscriber-check-1.3.28.min.js" defer></script>
+    <script type="text/javascript" src="https://d1qqc1e9kvmdh8.cloudfront.net/js/ngux-ads-2.4.3.min.js" defer></script>
+    
+    
+
+    
+</head>
+<body data-ad-slug="california-rental-calculator-map" data-ad-path="4011/trb.latimes/news/datadesk" data-ad-ptype="s" data-ad-iframe-url="/projects/static/ngux-tophat-ad-iframe.html" >
+    <!-- NAV -->
+    
+
+    
+<article>
+    <section name="graphic" class="graphic">
+        <!-- <div class="calculator">
+        </div> -->
+        <div class="intro-container graphic__cell">
+            <div class="new-tophat">
+                <a class="tophat-logo" href="https://www.latimes.com"><img src="https://d1qqc1e9kvmdh8.cloudfront.net/img/latimes-logo.svg" alt="Los Angeles Times"></a>
+            </div>
+            <div class="intro-input">
+                <h1>Where can you afford to rent in California?</h1>
+                
+
+<div class="shares">
+  <a class="shares__item" href="https://www.facebook.com/dialog/share?app_id=119932621434123&href=https://www.latimes.com/projects/california-rental-calculator-map/"><i class="LATFacebook" data-socialshare-type="facebook" aria-label="Share this page on Facebook"></i></a>
+  <a class="shares__item" href="https://twitter.com/intent/tweet?url=https://www.latimes.com/projects/california-rental-calculator-map/&text=Where%20can%20you%20afford%20to%20rent%20in%20California%3F" aria-label="Share this page on Twitter"><i class="LATTwitter" data-socialshare-type="twitter" ></i></a>
+  <a class="shares__item" href="mailto:?subject=Where%20can%20you%20afford%20to%20rent%20in%20California%3F - Los Angeles Times&body=https://www.latimes.com/projects/california-rental-calculator-map/" aria-label="Share this page in an email"><i class="LATEmail" data-socialshare-type="email"></i></a>
+</div>
+
+                <p class="byline">
+                    By <span class="author"><a href='https://www.latimes.com/la-bio-ryan-murphy-staff.html'>Ryan Murphy</a> and <a href='https://www.latimes.com/staff/priya-krishnakumar'>Priya Krishnakumar</a></span>
+                </p>
+                <p class="dateline">
+                    <time datetime="2019-08-29" pubdate>
+                        Aug. 29, 2019
+                    </time>
+                </p>
+                <p class="robotext">Economists say you shouldn't spend more than 30% of your earnings on rental costs. Using Zillow data, we mapped out the state's rental market. Use this tool to see where you can afford to live.</p>
+
+                <p class="robotext" id="percent-text">How much do you make in a year? $
+                    <input id="amount" maxlength="15" type="text" value="61,015">
+
+                </p>
+                <p class="robotext_small">Or, use a typical salary in one of these counties<br> <a class="small_text selected" data-value="61,015">Los Angeles</a>
+                <a class="small_text" data-value="96,265">San Francisco</a>
+                <a class="small_text" data-value="48,730">Fresno</a></p>
+
+                 <p class="robotext">You can afford to pay <span id="monthlyrent"></span> a month on rent and utilities. The map shows ZIP Codes with rentals available in this price range. </p>
+
+                 <p class="robotext">You're spending <span id="monthlypercent"></span> of your income on rental costs. Willing to pay more? Drag the slider to shift your monthly budget. <span style="display:none" id="context"></span></p>
+
+                <div id="slider_holder">
+                    <!-- <p class="input-label">$500</p> -->
+                    <input type="range" step="100" class="graphic-slider" min="500" max="10000" value="1500" id="money_slider">
+                    <output id="salary_output">24</output>
+                    <!-- <p style="text-align: left;" class="input-label">$5,000</p> -->
+                    
+                </div>
+                <div class="affordable-bar">
+                    <div class="affordable-block affordable_rent" id="affordable_bracket"></div>
+                    <div class="affordable-block" ><p>Affordable</p></div>
+                </div>
+
+                <p class="credits credits--desktop" style="text-align: left; margin-top: 40px; line-height: 1.5;">Note: Data collected by Zillow in July and August of 2019. Apartments on map reflect advertised rent, which may or may not include some utility costs. Utility costs vary by household, but on average Californians spend $140 on gas and electric each month, according to a 2015 report from the California Public Utilities Commission. Typical county income based on US Census Bureau estimates from the 2017 American Community Survey.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="map-container graphic__cell">
+            <div class="map" id="map">
+            <div class="legend-holder">
+                <div class="legend-text">Rentals under $<span id="key_rent"></span> a month</div>
+                <div class="legend-colors-holder">
+                    <div class="legend-item legend-item--cell" style="background-color: #e6dce8;"></div>
+                    <div class="legend-item legend-item--cell" style="background-color: #d8c4da;"></div>
+                    <div class="legend-item legend-item--cell" style="background-color: #af83b5;"></div>
+                    <div class="legend-item legend-item--cell" style="background-color: #78427f;"></div>
+                    <div class="legend-item legend-item--cell" style="background-color: #58256a;"></div>
+                </div>
+                <div class="legend-text-holder">
+                    <p class="legend-item legend-item--text">0</p>
+                    <p class="legend-item legend-item--text">10</p>
+                    <p class="legend-item legend-item--text">25</p>
+                    <p class="legend-item legend-item--text">50</p>
+                    <p class="legend-item legend-item--text">100+</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <p class="credits credits--mobile" style="text-align: left; margin-top: 20px; line-height: 1.5;">Note: Data collected by Zillow in July and August of 2019. Apartments on map reflect advertised rent, which may or may not include some utility costs. Utility costs vary by household, but on average Californians spend $140 on gas and electric each month, according to a 2015 report from the California Public Utilities Commission. Typical county income based on US Census Bureau estimates from the 2017 American Community Survey.</p>
+    </section>
+    <div class="container">
+        
+        <div class="mlt_lite">
+            <aside title="Advertisement" class="banner-ad">
+    <div class="tophat-banner-container">
+        <div class="tophat-banner">
+            <div class="advert"></div>
+            <span class="tophat-ad-label">ADVERTISEMENT</span>
+        </div>
+    </div>
+</aside>
+
+
+            <h3>More on housing from the Los Angeles Times</h3>
+            <p><a href="https://www.latimes.com//business/story/2019-08-28/senior-housing-crisis-impact"><em>Seniors facing eviction fear homelessness and isolation as California’s housing crisis grows</em></a></p>
+
+            <p><a href="https://www.latimes.com/business/story/2019-08-08/california-housing-shortage-home-builders"><em>California home builders are pulling back, deflating hopes for housing relief</em></a></p>
+
+            <p><a href="https://www.latimes.com/business/la-fi-inflation-california-20190613-story.html"><em>California cities lead the U.S. in inflation. Housing costs are a big reason why</em></a></p>
+
+            <aside class="support">
+                <h3>
+                    <a href="http://www.latimes.com/subscriptions/">
+                        Support our journalism <i class="LATLinkOutArrow"></i>
+                    </a>
+                </h3>
+                Please consider subscribing today to support more stories like this. <a href="http://www.latimes.com/subscriptions/">Get full access</a> to our journalism for just 99 cents for the first four weeks. Already a subscriber? Your support makes our work possible. Thank you.
+            </aside>
+
+            <section name="credits">
+            
+                <p class="sources">Additional reporting by Andrew Khouri and Sandhya Kambhampati</p>
+                <p class="sources">Sources: Zillow, Mapbox, and US Census Bureau</p>
+            
+        </section>
+        </div>
+
+    </div>
+</article>
+
+<div class="map-tooltip" hidden>
+    <p class="map-tooltip__zip"></p>
+    <p class="map-tooltip__total"></p>
+</div>
+
+
+    
+        
+        <!-- Google Analytics code -->
+        <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-65208330-4', 'latimes.com');
+              ga('send', 'pageview');
+        </script>
+        
+    
+
+    
+    
+    <footer title="Footer">
+        <nav id="footer-container">
+    <div id="footer">
+        
+            
+                <div id="tos">
+                    <a href="//www.latimes.com/terms">Terms of Service</a> |
+                    <a href="//www.latimes.com/privacy">Privacy<span class="hidden-phone"> Policy</span></a> |
+                    <a href="//www.latimes.com/lat-about-our-ads,0,3875412.htmlstory"><span class="hidden-phone">About Our </span>Ads</a> |
+                    <a href="//www.latimes.com/services/site/la-reprint-request-splash,0,6731163.htmlstory">&copy;</a> |
+                    <a href="//www.latimes.com/about/"><span class="hidden-phone">About This Site</span></a>
+                </div>
+            
+        
+    </div>
+</nav>
+
+    </footer>
+    
+    <script type="text/javascript" src="https://ssor.tribdss.com/reg/tribune/lanews-static.min.js" defer async></script>
+    
+    <script type="text/javascript" src="https://dss.platform.californiatimes.com/meter/latspot.min.js" defer async></script>
+    
+
+
+    
+<script defer src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+<script defer src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js'></script>
+<script defer src="/projects/california-rental-calculator-map/static/scripts/app.1fe8614a.js"></script>
+
+
+    
+    <script>
+        (function() {
+            /** CONFIGURATION START **/
+            var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+
+            _sf_async_config.uid = 3908;
+            _sf_async_config.domain = 'latimes.com';
+            _sf_async_config.flickerControl = false;
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.useCanonicalDomain = true;
+            _sf_async_config.sections = 'bigbuilder';
+            _sf_async_config.authors = 'Ryan Murphy and Priya Krishnakumar';
+            /** CONFIGURATION END **/
+            function loadChartbeat() {
+                var e = document.createElement('script');
+                var n = document.getElementsByTagName('script')[0];
+                e.type = 'text/javascript';
+                e.async = true;
+                e.src = '//static.chartbeat.com/js/chartbeat.js';
+                n.parentNode.insertBefore(e, n);
+            }
+            loadChartbeat();
+         })();
+    </script>
+    
+</body>
+</html>

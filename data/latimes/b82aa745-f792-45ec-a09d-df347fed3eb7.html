@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Table Reservations</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+
+        #opentablecontainer {
+            display: flex;
+            flex-direction: row;
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #808080;
+            width: 90%;
+            margin: auto;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 640px) {
+            #opentablecontainer {
+                flex-direction: column;
+            }
+        }
+
+        #opentablelogocontainer {
+            margin: 10px auto;
+        }
+
+        #opentablelogo {
+            width: 200px;
+        }
+
+        #opentabletext {
+            width: 20%;
+            margin: auto;
+            text-align: center;
+            font-family: BentonGothic, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.17;
+            letter-spacing: normal;
+            color: #333333;
+        }
+
+        #opentablelinkcontainer {
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #opentablelink {
+            text-decoration: none;
+        }
+
+        #opentablelinkredbox {
+            width: 200px;
+            text-align: center;
+            height: 50px;
+            border-radius: 4px;
+            background-color: #d83947;
+        }
+
+        #opentablelinktext {
+            vertical-align: center;
+            font-family: BentonGothic, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.7;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div id="opentablecontainer">
+    <div id="opentablelogocontainer"><img id="opentablelogo"
+                                          src="https://www.latimes.com/projects/opentable-widget/static/open-table-Logo_horizontal_RGB.png"
+                                          alt="Open Table"></div>
+    <div id="opentabletext">Make a reservation at this restaurant.</div>
+    <div id="opentablelinkcontainer"><a id="opentablelink"
+                                        href="#"
+                                        rel="nofollow noopener" target="_blank">
+        <div id="opentablelinkredbox">
+            <div id="opentablelinktext">Find a Table</div>
+        </div>
+    </a></div>
+</div>
+<script>
+
+    function getParameter(paramName) {
+        var searchString = window.location.search.substring(1),
+            i, val, params = searchString.split("&");
+
+        for (i = 0; i < params.length; i++) {
+            val = params[i].split("=");
+            if (val[0] === paramName) {
+                return val[1];
+            }
+        }
+        return null;
+    }
+
+    function getIframeContentHeight() {
+        var contentContainer = document.getElementById('opentablecontainer');
+        var iframe = window.parent.document.getElementById('opentableiframe');
+        if (iframe && iframe.style) {
+            iframe.style.height = (contentContainer.offsetHeight + 30) + 'px';
+        }
+    }
+
+    (function () {
+        document.addEventListener('DOMContentLoaded', (event) => {
+            getIframeContentHeight();
+        });
+
+        var openTableUri = getParameter('restURI');
+        if (openTableUri) {
+            openTableUri = decodeURIComponent(openTableUri);
+        }
+        if (openTableUri && openTableUri.indexOf('https://www.opentable.com/r/') !== -1) {
+            openTableUri = openTableUri + '?ref=18113';
+            document.getElementById('opentablelink').setAttribute('href', openTableUri);
+        } else {
+            var contentContainer = document.getElementById('opentablecontainer');
+            contentContainer.style.display = 'none';
+        }
+
+        window.onresize = getIframeContentHeight;
+    })();
+
+</script>
+
+</body>
+</html>
